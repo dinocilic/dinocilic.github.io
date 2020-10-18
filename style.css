@@ -1,0 +1,343 @@
+html, body {
+    height: auto;
+    width: 100%;
+    font-family: 'Courier New', Courier, monospace;
+    scroll-behavior: smooth;
+}
+.container-fluid {
+    margin: 0;
+    padding: 0;
+    height: auto;
+}
+.row {
+    padding: 0;
+    margin: 0;
+}
+.card {
+    border: none;
+}
+
+textarea {
+    resize: none;
+}
+
+.icon {
+    height: 30px;
+}
+
+.logo {
+    height: 30px;
+}
+
+.footer-logo {
+    height: 50px;
+}
+
+
+/* NAVBAR */
+
+.navbar {
+    display: none;
+    position: fixed;
+    width: 100%;
+    z-index: 1;
+    top: 0;
+    transition: top 0.3;
+}
+
+.navbar-nav {
+    width: 100%;
+}
+
+.navbar-brand {
+    margin: 0;
+}
+
+.navbar-nav .nav-item {
+    padding: 0.5px;
+}
+
+/* HEADER */
+#home {
+    height: 100vh;
+    background: url('images/work.jpg');
+    background-size: cover;
+    background-position: top;
+}
+
+.title {
+    position: relative;
+    top: 30%;
+    background-color: #f4f4f4;
+    opacity: .5;
+    width: 60%;
+    left: 17%;
+    border-top-right-radius: 50px;
+    border-bottom-left-radius: 50px;
+    color: #000555;
+    padding: 10px;
+}
+.name {
+    font-size: 4rem;
+    font-weight: bold;
+}
+.name-info {
+    font-family: monospace;
+    margin-top: 25px;
+    font-size: 3rem;
+    font-weight: bold;
+}
+/* ABOUT  */
+#about {
+    height: 100%;
+    margin-top: 5%;
+    margin-bottom: 5%;
+}
+
+
+#about .profile-top {
+    padding: 0;
+}
+
+#about .img-profile {
+    display: block;
+    margin: auto;
+    border-radius: 50%;
+    height: 500px;
+}
+
+#about .profile-text {
+    padding: 10px;
+    font-size: 14px;
+}
+
+
+
+/* Parallax */
+.parallax {
+    height: 250px;
+    background: url('images/front.jpg');
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+}
+
+.parallax_second {
+    height: 250px;
+    background: url('images/home_office.jpg');
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+}
+
+/* SKILL PAGE  */
+#skills {
+    height: 100%;
+    margin-top: 5%;
+    margin-bottom: 5%;
+}
+/*
+.skill-header .skill-top {
+    position: relative;
+    left: 25%;
+}*/
+
+.skill-head-img {
+    display: block;
+    margin: auto;
+    height: 500px;
+}
+
+.front-img {
+    height: 90px;
+    display: block;
+    margin: auto;
+}
+
+.back-img {
+    height: 90px;
+    display: block;
+    margin: auto;
+}
+
+.sd-skill-progress .progress {
+    margin-bottom: 15px;
+}
+
+.sd-img {
+    height: 300px;
+    display: block;
+    margin: auto;
+}
+
+.mail-box h4 {
+    font-size: 1rem;
+}
+
+/* CONTACT PAGE */
+#contact {
+    height: 100%;
+    margin-top: 5%;
+    margin-bottom: 5%;
+}
+
+#contact .social-img {
+    height: 80px;
+}
+
+#contact .social-box {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+}
+
+#contact .form, .form-top {
+    position: relative;
+}
+
+#contact .btn {
+    float: right;
+}
+
+#footer {
+    height: 100%;
+    border-top: 1px solid #000555;
+}
+
+#footer .blockquote p {
+    font-size: 16px;
+}
+
+#map {
+    margin-top: 3%;
+    height: 200px;
+    margin-bottom: 3%;
+}
+
+@media screen and (max-width: 1260px ) {
+    #home .name {
+        font-size: 2.5rem;
+    }
+    #home .name-info {
+        font-size: 2rem;
+    }
+    #contact .social-img {
+        height: 70px;
+    }
+    #footer .blockquote p {
+        font-size: 14px;
+    }
+}
+
+
+@media screen and (max-width: 768px) {
+    #about .img-profile {
+        height: 400px;
+    }
+    #about .profile-text {
+        font-size: 12px;
+    }
+    #skills .skill-head-img {
+        height: 400px;
+    }
+    #skills .sd-img {
+        height: 200px;
+    }
+    #skills .skill-text {
+        font-size: 12px;
+    }
+    #home .name {
+        font-size: 2rem;
+    }
+    #home .name-info {
+        font-size: 1.5rem;
+    }
+    #contact .cnt-text {
+        font-size: 14px;
+    }
+    #footer .blockquote p {
+        font-size: 14px;
+    }
+}
+
+
+@media only screen and (max-width: 565px) {
+    .title {
+        width: 80%;
+        left: 10%;
+        top: 40%;
+    }
+    #home .name {
+        font-size: 2rem;
+    }
+    #home .name-info {
+        font-size: 1rem;
+    }
+    #about .img-profile {
+        height: 250px;
+    }
+    #about .profile-text {
+        font-size: 10px;
+        padding: 5px;
+    }
+    #skills .wb-box-title, .skill-top {
+        font-size: 1rem;
+    }
+    #skills .skill-head-img {
+        height: 250px;
+    }
+    #skills .back-img, .front-img {
+        height: 75px;
+    }
+    #skills .sd-img {
+        height: 150px;
+    }
+    #skills .skill-text {
+        font-size: 11px;
+    }
+    #skills .sd-title {
+        font-size: 1rem;
+    }
+    #contact .social-img {
+        height: 40px;
+    }
+    #contact .cnt-text {
+        font-size: 11px;
+    }
+    #contact .form-top h4 {
+        font-size: 1rem;
+    }
+    #footer .blockquote p {
+        font-size: 12px;
+    }
+}
+
+@media only screen and (max-width: 370px) {
+    .title {
+        width: 80%;
+        left: 10%;
+        top: 40%;
+    }
+    #home .name {
+        font-size: 2rem;
+    }
+    #home .name-info {
+        font-size: 1rem;
+    }
+    #about .img-profile {
+        height: 150px;
+    }
+    #skills .skill-head-img {
+        height: 150px;
+    }
+    #skills .back-img, .front-img {
+        height: 60px;
+    }
+    #contact .social-img {
+        height: 20px;
+    }
+}
+
