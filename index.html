@@ -1,472 +1,395 @@
 <!DOCTYPE html>
-<html lang="en">
-<head>
-	<title>Web/Linux Enthusiast</title>
-	<meta charset="utf-8">
-	<meta http-equiv="X-UA-Compatible" content="IE=edge">
-	<meta name="author" content="Dino Cilic">
-	<meta name="keywords" content="Web, Web Developer, Software Developer, Linux, Dino Cilic, Nodi, Python Developer, HTML, CSS, Javascript, Developer, System, Jablanica, Bosna, Hercegovina, Programer, IT, Tehnologija, Bosnia, Programer, programer, jablanica, dino">
-	<meta name="description" content="Personal Web Page">
-	<meta name="viewport" content="width=device-width, initial-scale=1.0"> 
-	<link rel="dns-prefetch" href="//ajax.googleapis.com">
-	<link rel="dnf-prefetch" href="//fonts.googleapis.com">
-	<link rel="dnf-prefetch" href="//cdnjs.com/">
-	<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/css/bootstrap.min.css" integrity="sha384-TX8t27EcRE3e/ihU7zmQxVncDAy5uIKz4rEkgIXeMed4M0jlfIDPvg6uqKI2xXr2" crossorigin="anonymous">	
-	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.5.2/animate.min.css">
-	<link rel="stylesheet" href="style.css">
-</head>
+<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
+<!--[if gt IE 8]>      <html class="no-js"> <![endif]-->
+<html>
+    <head lang="en">
+        <title>Dino Cilic | Full Stack Developer | Linux System Administrator |</title>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="author" content="Dino Cilic">
+        <meta name="keywords" content="Web, Web Developer, Software Developer, Linux, Dino Cilic, Nodi, Python Developer, HTML, CSS, Javascript, Developer, System, Jablanica, Bosna, Hercegovina, Programer, IT, Tehnologija, Bosnia, Programer, programer, jablanica, dino">
+        <meta name="description" content="Dino Cilic, Full Stack Developer | Linux System Administrator | My name is Dino Cilic and I am a Full Stack Developer from Jablanica. If you are in need of a developer for your project, contact me and let's get your project started :) ">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0"> 
+        <meta name="robots" content="INDEX, FOLLOW">
+        <meta property="og:url" content="https://dinocilic.github.io">
+        <meta property="og:title" content="Dino Cilic, Full Stack Developer | Linux System Administrator | My name is Dino Cilic and I am a Full Stack Developer from Jablanica. If you are in need of a developer for your project, contact me and let's get your project started :) ">
+        <link rel="canonical" href="https://dinocilic.github.io>
+        <link rel="apple-touch-icon" sizes="180x180" href="images/apple-touch-icon.png">
+        <link rel="icon" type="image/png" sizes="32x32" href="images/favicon-32x32.png">
+        <link rel="icon" type="image/png" sizes="16x16" href="images/favicon-16x16.png">
+        <link rel="icon" type="image/png" sizes="192x192" href="images/android-chrome-192x192.png">
+        <link rel="manifest" href="/site.webmanifest">
+        <link rel="dns-prefetch" href="//ajax.googleapis.com">
+        <link rel="dnf-prefetch" href="//fonts.googleapis.com">
+        <link rel="dnf-prefetch" href="//cdnjs.com/">
+        <!-- CSS only -->
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-iYQeCzEYFbKjA/T2uDLTpkwGzCiq6soy8tYaI1GyVh/UjpbCx/TYkiZhlZB6+fzT" crossorigin="anonymous">        
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css" integrity="sha512-xh6O/CkQoPOWDdYTDqeRdPCVd1SpvCA9XXcUnZS2FmJNp1coAFzvtCN9BmamE+4aHK8yyUHUSCcJHgXloTyT2A==" crossorigin="anonymous" referrerpolicy="no-referrer" />        
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.5.2/animate.min.css">
+        <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+        <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.2/dist/leaflet.css" integrity="sha256-sA+zWATbFveLLNqWO2gtiw3HL/lh1giY/Inf1BJ0z14=" crossorigin="" />
+        <link rel="stylesheet" href="style.css">
+    </head>
     <body>
+        <!--[if lt IE 7]>
+            <p class="browsehappy">You are using an <strong>outdated</strong> browser. Please <a href="#">upgrade your browser</a> to improve your experience.</p>
+        <![endif]-->
 
-        <div id="main" class="container-fluid">	
+        <div class="main-wrapper">
 
-			<!-- NAVBAR -->
-			<nav id="navbar" class="navbar navbar-expand-lg navbar-light bg-light">
-				<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-				  <span class="navbar-toggler-icon"></span>
-				</button>
-				<div class="collapse navbar-collapse" id="navbarNav">
-				  <ul class="navbar-nav justify-content-center">
-					<li class="nav-item active">
-					  <a class="nav-link" href="#home">Home <span class="sr-only">(current)</span></a>
-					</li>
-					<li class="nav-item">
-					  <a class="nav-link" href="#about">About</a>
-					</li>
-					<li class="nav item">
-						<a class="navbar-brand" href="#home">
-							<img src="images/logo.png" alt="" class="logo">
-						</a>
-					</li>
-					<li class="nav-item">
-					  <a class="nav-link" href="#skills">Skills</a>
-					</li>
-					<li class="nav-item">
-					  <a class="nav-link" href="#contact">Contact</a>
-					</li>
-				  </ul>
-				</div>
-			  </nav>
+                <!-- NAVBAR -->
+                <nav id="navbar" class="navbar navbar-expand-lg navbar-light bg-light">
 
-			<!-- Header with title -->
-            <div id="home" class="header container-fluid">
-				<div class="title text-center">
-					<div class="title-text">
-						<h1 class="name animated ">Dino Cilic</h1>
-						<p class="name-info animated ">Web / Linux Developer & Gamer</p>
-					</div>
-				</div>
-			</div>
-			
-			<!-- About me section -->
-			<div id="about" class="container">
+                    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                    </button>
+                    <a href="#home" class="nav-brand">
+                        <img src="images/logo.png" alt="Dino Cilic logo" class="logo">
+                    </a>
+                    <div class="collapse navbar-collapse" id="navbarNav">
+                    <ul class="nav nav-fill nav-tabs">
+                        <li class="nav-item active">
+                        <a class="nav-link" href="#header">Home <span class="sr-only">(current)</span></a>
+                        </li>
+                        <li class="nav-item">
+                        <a class="nav-link" href="#about">About</a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="#work" class="nav-link">Work</a>
+                        </li>
+                        <li class="nav-item">
+                        <a class="nav-link" href="#skills">Skills</a>
+                        </li>
+                        <li class="nav-item">
+                        <a class="nav-link" href="#contact">Contact</a>
+                        </li>
+                    </ul>
+                    </div>
+                </nav>
 
-				<div class="row align-items-center">
-					<div class="col-12 profile-top">
-						<img src="images/profile.png" alt="My profile picture" class="img-profile">
-						<div class="profile-title shadow">
-							<h4 class="text-center mt-2 p-3">
-								<img src="images/information.png" alt="Icons made by Freepik" class="icon"> About me
-							</h4>
-						</div>
-					</div>
-					<div class="col-12 shadow p-2 mt-2">
-						<div class="profile-intro">
-							<p class="profile-text">
+            <div class="header" id="header">
+                <h1 class="header-title">
+                    Dino Čilić
+                </h1>
+                <h3 class="header-text">
+                    Full Stack Developer & Linux System Administrator
+                </h3>
+            </div>
+            <div class="parallax"></div>
+
+            <div id="about" class="about">
+                <div class="about-content">
+                    <div class="box">
+                        <div class="box-header">
+                            <h1 class="text-center box-title">
+                                <i class="fa-solid fa-note-sticky"></i> About me
+                            </h1>
+                        </div>
+                        <div class="box-content">
+                            <h1 class="box-text">
 								Hello, my name is Dino Čilić and it's very nice to meet you.
 								I am from Bosnia and Herzegovina, from a small town on south of the country called Jablanica.
-							</p>
-							<p class="profile-text">
-								I am self taught, passionate web developer and linux sys admin. I am also a gamer and a huge fan of World of Warcraft and Blizzard.
+                            </h1>
+                            <h1 class="box-text">
+								I am self taught, passionate Web Developer and Linux System Administrator. I am also a gamer and a huge fan of World of Warcraft and Blizzard
 								I have a BA in business economy attended at American University and Logos College. But regardless of the fact that education I gained gave me great insight into the world of business and management. <br>
 								I never felt that is the place in which I should put all my energy in. 
-							</p>
-							<p class="profile-text">
-								I was always interested in tehnology, fixing computers, dealing with routers, installing and fixing systems.
-								On the other hand, i also had a big interest towards programming, how website's work, systems, software, apps and etc.
-								But when I wrote my first line of code in html, that was it. <br> And that is where I knew that this is my true passion.
-							</p>
-							<p class="profile-text">
-								Most of the time I am developing presentation websites for companies and individuals wanting to enter the web space and i am constantly learning more and more about Linux system administration. <br>
-								If you would like to work with me or hire me for a project, you can see my contact information down below. <br>
-							</p>
-						</div>
-
-					</div>
-				</div>
-
-			</div>
-
-			<div class="parallax"></div>
-			
-			<!-- Skill section -->
-			<div id="skills" class="container-fluid">
-				
-				<div class="skill-header container">
-					<h4 class="skill-top text-center shadow p-3">
-						<img src="images/skills.png" alt="Icons made by Freepik" class="icon"> Skills
-					</h4>
-				</div>
-
-				<div class="skill-header-img">
-					<img src="images/programer.png" alt="" class="skill-head-img">
-				</div>
-
-				<div class="webdev-content container">
-
-					<div class="row">
-						<div class="col-6">
-							<div class="wb-box">
-								<h4 class="wb-box-title text-center shadow p-2 mt-3"> Front-end </h4>
-								<div class="wb-list">
-									<div class="skill">
-										<img src="images/html.png" alt="" class="front-img">
-										<div class="progress">
-											<div class="progress-bar bg-primary" role="progressbar" style="width: 100%;" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100">  </div>
-										</div>
-									</div>
-									<div class="skill">
-										<img src="images/css.png" alt="" class="front-img">
-										<div class="progress">
-											<div class="progress-bar bg-primary" role="progressbar" style="width: 100%;" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100" >  </div>
-										</div>
-									</div>
-									<div class="skill">
-										<img src="images/bootstrap.png" alt="" class="front-img">
-										<div class="progress">
-											<div class="progress-bar bg-primary" role="progressbar" style="width: 80%;" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100" >  </div>
-										</div>
-									</div>
-									<div class="skill">
-										<img src="images/javascript.png" alt="" class="front-img">
-										<div class="progress">
-											<div class="progress-bar bg-primary" role="progressbar" style="width: 80%;" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100" >  </div>
-										</div>
-									</div>
-									<div class="skill">
-										<img src="images/jquery.png" alt="" class="front-img">
-										<div class="progress">
-											<div class="progress-bar bg-primary" role="progressbar" style="width: 90%;" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100" > </div>
-										</div>
-									</div>
-								</div>
-							</div>
-						</div>
-						<div class="col-6">
-							<div class="wb-box">
-								<h4 class="wb-box-title text-center shadow p-2 mt-3"> Back-end </h4>
-								<div class="wb-list">
-									<div class="skill">
-										<img src="images/python1.png" alt="" class="back-img">
-										<div class="progress">
-											<div class="progress-bar bg-primary" role="progressbar" style="width: 95%;" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100" ></div>
-										</div>
-									</div>
-									<div class="skill">
-										<img src="images/php.png" alt="" class="back-img">
-										<div class="progress">
-											<div class="progress-bar bg-primary" role="progressbar" style="width: 90%;" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100" ></div>
-										</div>
-									</div>
-									<div class="skill">
-										<img src="images/node.png" alt="" class="back-img">
-										<div class="progress">
-											<div class="progress-bar bg-primary" role="progressbar" style="width: 80%;" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100" ></div>
-										</div>
-									</div>
-									<div class="skill">
-										<img src="images/database.png" alt="" class="back-img">
-										<div class="progress">
-											<div class="progress-bar bg-primary" role="progressbar" style="width: 80%;" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100" ></div>
-										</div>
-									</div>
-								</div>
-							</div>
-						</div>
-					</div>
-
-				</div>
-
-				<div class="softwaredev-content container mt-3">
-
-					<div class="sd-content">
-						
-						<div class="skill-header">
-							<h4 class="skill-top text-center shadow p-3 w-100">
-								Software Development
-							</h4>
-						</div>
-
-						<div class="py-content">
-
-							<div class="row">
-
-								<div class="col-12 col-md-6">
-									<div class="py-box">
-										<h4 class="sd-title text-center shadow p-2 mt-2 ">
-											Python
-										</h4>
-
-										<div class="sd-skill-progress mt-3">
-
-											<div class="progress">
-												<div class="progress-bar progress-bar-striped progress-bar-animated bg-primary" role="progressbar"style="width: 100%;" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100"> 	Web Scraping 
-												</div>
-											</div>
-
-											
-											<div class="progress">
-												<div class="progress-bar progress-bar-striped progress-bar-animated bg-primary" role="progressbar" style="width: 95%;" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100"> 	Back-end (Django/Flask) 
-												</div>
-											</div>
-
-											
-											<div class="progress">
-												<div class="progress-bar progress-bar-striped progress-bar-animated bg-primary" role="progressbar" style="width: 100%;" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100"> 	System/Automating 
-												</div>
-											</div>
-
-											<div class="progress">
-												<div class="progress-bar progress-bar-striped progress-bar-animated bg-primary" role="progressbar" style="width: 90%;" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100"> 	GUI 
-												</div>
-											</div>
-
-											<div class="progress">
-												<div class="progress-bar progress-bar-striped progress-bar-animated bg-primary" role="progressbar" style="width: 80%;" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100"> 	NLT/AI 
-												</div>
-											</div>
-											<div class="progress">
-												<div class="progress-bar progress-bar-striped progress-bar-animated bg-primary" role="progressbar" style="width: 80%;" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100"> 	Data Analysis 
-												</div>
-											</div>
-
-										</div>
-
-										<div class="sd-skill-text">
-											<p class="skill-text">
-												Python is everywhere today and with it you can do anything. It's high in demand when it comes to web development, machine learning, automating stuff, data science and etc.
-											</p>
-											<p class="skill-text">
-												It is a fairly easy language to learn, cause it's syntax is like reading plain English. <br>
-												I encourage anyone to try it, cause once you do, you will love it. 
-											</p>
-											<p class="skill-text">
-												If you need someone to show you the basics of Python and how to start with learning Python, contact me and i can help you with it. 
-											</p>
-											<p class="skill-text">
-												For more info on Python language visit	<a href="www.python.com"> Python homepage.</a>											
-											</p>
-										</div>
-
-									</div>
-								</div>
-
-								<div class="col-12 col-md-6 align-self-center">
-									<img src="images/python.png" alt="" class="img-fluid sd-img ">
-								</div>
-
-							</div>
-
-						</div>
-
-					</div>
-
-					<div class="sysdev-content">
-
-						<div class="skill-header">
-							<h4 class="sd-title text-center shadow p-3 mt-3 w-100">
-								Linux System Administrator
-							</h4>
-						</div>
-
-						<div class="lxadmin-content">
-
-							<div class="row">
-
-								<div class="col-12 col-md-6 align-self-center">
-									<img src="images/linux.png" alt="" class="img-fluid sd-img">
-								</div>
-
-								<div class="col-12 col-md-6">
-
-									<div class="sd-skill-progress mt-3">
-										<div class="progress">
-											<div class="progress-bar progress-bar-striped progress-bar-animated bg-primary" role="progressbar"style="width: 100%;" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100"> 	
-												Debian
-											</div>
-										</div>
-
-										
-										<div class="progress">
-											<div class="progress-bar progress-bar-striped progress-bar-animated bg-primary" role="progressbar" style="width: 95%;" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100"> 	
-												Ubuntu 
-											</div>
-										</div>
-
-										
-										<div class="progress">
-											<div class="progress-bar progress-bar-striped progress-bar-animated bg-primary" role="progressbar" style="width: 80%;" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100"> 	
-											Kali Linux 
-											</div>
-										</div>
-
-										<div class="progress">
-											<div class="progress-bar progress-bar-striped progress-bar-animated bg-primary" role="progressbar" style="width: 90%;" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100"> 	
-												LAMP 
-											</div>
-										</div>
-
-										<div class="progress">
-											<div class="progress-bar progress-bar-striped progress-bar-animated bg-primary" role="progressbar" style="width: 90%;" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100"> 	Bash Scripting
-											</div>
-										</div>
-									</div>
-
-									<div class="sd-skill-text">
-										<p class="skill-text">
-											Want to do more with your systems? Customize it by your own desire, make your own server?
-											Then Linux is the way to go. With Linux you can do powerful and amazing stuff, its fast and very fun to use. 
-										</p>
-										<p class="skill-text">
-											If you are thinking about join Linux community and you are a beginner, ready for some new challanges. I would advise you first to go with Ubuntu, cause it's beginner friendly and has a big community. <br>
-											If you like to learn more about Linux feel free to contact me and i will help you set it up.
-										</p>
-										<p class="skill-text">
-											Join the open source crowd and feel the life.
-										</p>
-									</div>
-								</div>
-
-							</div>
-
-						</div>
-
-					</div>
-
-				</div>
-				
-			</div>
-
-			<div class="parallax_second"></div>
-
-			<!-- Contact section-->
-			<div id="contact" class="container-fluid">
-
-				<div class="cnt-content container">
-
-					<div class="cnt-head shadow">
-						<h4 class=" text-center p-3">
-							<img src="images/phone-contact.png" alt="Icons made by Freepik" class="icon"> Contact
-						</h4>
-						<p class="cnt-text text-center p-3">
-							You want to hire me? Need my help with some project or just need help getting started in Web/Software development? <br>
-							Contact me using one of the methods below.
-						</p>
-					</div>
-
-					<div class="row">
-
-						<div class="col-12 col-sm-12 col-md-12 col-lg-12 align-self-center">
-
-							<div class="social-box mt-3">
-
-								<div class="fb-logo p-3">
-									<a href="https://www.facebook.com/dino.cilic/">
-										<img src="images/facebook.png" alt="" class="social-img">
-									</a>
-								</div>
-
-								<div class="insta-logo p-3">
-									<a href="https://www.instagram.com/dinocilic/">
-										<img src="images/instagram.png" alt="" class="social-img">
-									</a>
-								</div>
-								
-								<div class="git-logo p-3">
-									<a href="https://github.com/dinocilic">
-										<img src="images/github.png" alt="" class="social-img">
-									</a>	
-								</div>
-								
-								<div class="link-logo p-3">
-									<a href="https://www.linkedin.com/in/dinocilic/">
-										<img src="images/linkedin.png" alt="" class="social-img">
-									</a>
-								</div>
-
-							</div>
-							<div class="mail-box">
-								<h4 class="p-3 shadow mt-3 text-center">
-									Or send me an email at <a href="mailto:dino.cilic@gmail.com"> dino.cilic@gmail.com </a>
-								</h4>
-							</div>
-
-						</div>
-
-						<!-- 
-						<div class="col-12 col-sm-12 col-md-12 col-lg-6">
-
-							<div class="form-top">
-								<h4 class="shadow text-center p-3">
-									Send me a message
-								</h4>
-							</div>
-
-							<form action="mailto:dino.cilic@gmail.com" class="form" method="post" enctype="text/plain">
-
-								<div class="from-group">
-									<input type="text" class="form-control" placeholder="Name">
-								</div>
-								<div class="from-group mt-2">
-									<input type="text" class="form-control" placeholder="Email">
-								</div>
-								<div class="form-group mt-2">
-									<textarea name="message" id="" cols="30" rows="10" placeholder="Message" class="form-control"></textarea>
-								</div>
-
-								<button class="btn btn-dark">Send</button>
-
-							</form>
-
-						</div> -->
-
-					</div>
-
-				</div>
-
-			</div>
-			 
-			<div id="footer">
-
-				<div class="row">
-
-					<div class="col-12 col-md-6">
-						<div class="footer-rights p-3 mt-3">
-							<h4 class="footer-title text-center"> <img src="images/logo.png" alt="" class="footer-logo"> </h4>
-							<p class="footer-text text-center"> <i class="far fa-copyright"></i> All rights reserved</p>
-							<blockquote class="blockquote shadow p-2">
-								<p class="mb-0">Life is about balance be kind, but don't let people abuse you. Trust, but don't be deceived. Be content, but never stop improving yourself.</p>
-								<footer class="blockquote-footer text-right"><cite title="Source Title">Nishan Panwar </cite></footer>
-							  </blockquote>
-						</div>
-					</div>
-					<div class="col-12 col-md-6">
-						<div id="map"></div>
-					</div>
-					
-				</div>
-
-			</div>
+                            </h1>
+                            <h1 class="box-text">
+                                I was always interested in technology, websites, software and how they work, which drove me to learn more about it. <br>
+                                Once I started coding, at my first line of <i class="fa-brands fa-html5"></i> code I knew, this is where my passion lies!
+                            </h1>
+                        </div>
+                    </div>
+                </div>
+                <div class="about-picture" data-aos="fade-in" data-aos-duration="3000">
+                    <img src="images/profile.jpg" alt="Dino Cilic, profilna" class="about-img">
+                </div>
+            </div>
+            <div class="parallax"></div>
+
+            <div id="skills" class="skills">
+                <div class="web-box mt-5">
+                    <div class="box-header mb-4">
+                        <h1 class="box-header-title text-center">
+                            <i class="fa-solid fa-code"></i>   Website Development & Web Design <i class="fa-solid fa-code"></i>
+                        </h1>
+                    </div>
+                    <div class="web-box-content" >
+                        <div class="front-end shadow-lg p-4" data-aos="zoom-in-up" data-aos-duration="3000">
+                            <h2 class="web-title">
+                                Front-end Development
+                            </h2>
+                            <div class="box-list">
+                                <ul class="skill-list">
+                                    <li class="skill-list-item">
+                                        <i class="fa-brands fa-html5 html5"></i>
+                                    </li>
+                                    
+                                    <li class="skill-list-item">
+                                        <i class="fa-brands fa-css3 css3"></i>
+                                    </li>
+                                    <li class="skill-list-item">
+                                        <i class="fa-brands fa-js js"></i>
+                                    </li>
+                                    <li class="skill-list-item">
+                                        <i class="fa-brands fa-bootstrap bootstrap"></i>                          
+                                    </li>
+                                    <li class="skill-list-item">
+                                        <i class="fa-brands fa-sass"></i>
+                                    </li>
+                                </ul>
+                                <hr>
+                                <h4 class="list-title">
+                                    Frameworks
+                                </h4>
+                                <ul class="skill-list">
+                                    <li class="skill-list-item">
+                                        <i class="fa-brands fa-vuejs vuejs"></i>
+                                    </li>
+                                    <li class="skill-list-item">
+                                        <i class="fa-brands fa-react reactjs"></i>
+                                    </li>
+                                </ul>
+    
+                                <hr>
+                                <h4 class="list-title">
+                                    Graphics
+                                </h4>
+                                <ul class="skill-list">
+                                    <li class="skill-list-item graphics">
+                                        <img src="images/gimp.png" alt="Gimp" class="icons">
+                                    </li>
+                                    <li class="skill-list-item graphics">
+                                        <img src="images/canva.png" alt="Canva" class="icons">
+                                    </li>
+                                    <li class="skill-list-item graphics">
+                                        <img src="images/inkscape.png" alt="Inkskape" class="icons">
+                                    </li>
+                                </ul>
+                                <hr>
+                                <h4 class="list-title">
+                                    Editors
+                                </h4>
+                                <ul class="skill-list">
+                                    <li class="skill-list-item">
+                                        <img src="images/vscode.png" alt="Visual Studio Code" class="icons">
+                                    </li>
+                                    <li class="skill-list-item">
+                                        <img src="images/atom.png" alt="Atom" class="icons">
+                                    </li>
+                                </ul>
+                            </div>
+
+                        </div>
+                        <div class="back-end shadow-lg p-4" data-aos="zoom-in-down" data-aos-duration="3000">
+                            <h2 class="web-title">
+                                Back-end Development
+                            </h2>
+                            <div class="box-list">
+                                <ul class="skill-list">
+                                    <li class="skill-list-item nodejs">
+                                        <img src="images/node.png" alt="NodeJS" class="icons">                                        
+                                    </li>
+                                    <li class="skill-list-item python">
+                                        <img src="images/python.png" alt="Python" class="icons">                 
+                                    </li>
+                                    <li class="skill-list-item">
+                                        <i class="fa-brands fa-php php"></i>
+                                    </li>
+                                </ul>
+                                <hr>
+                                <h4 class="list-title">
+                                    Databases
+                                </h4>
+                                <ul class="skill-list">
+                                    <li class="skill-list-item database">
+                                        <img src="images/mongodb.png" alt="Mongodb" class="icons">
+                                    </li>
+                                    <li class="skill-list-item database">
+                                        <img src="images/mysql.png" alt="Mongodb" class="icons">
+                                    </li>        
+                                    <li class="skill-list-item database">
+                                        <img src="images/firebase.png" alt="Firebase" class="icons">
+                                    </li>
+                                </ul>
+                                <hr>     
+                                <h4 class="list-title">
+                                    Version Control
+                                </h4>
+                                <ul class="skill-list">
+                                    <li class="skill-list-item">
+                                        <i class="fa-brands fa-git"></i>
+                                    </li>
+                                    <li class="skill-list-item">
+                                        <i class="fa-brands fa-github"></i>
+                                    </li>
+                                </ul>
+                                <hr>
+                                <h4 class="list-title">
+                                    Project Management
+                                </h4>
+                                <ul class="skill-list">
+                                    <li class="skill-list-item">
+                                        <img src="images/clickup.png" alt="ClickUp" class="icons">
+                                    </li>
+                                </ul>
+    
+                                <hr>
+                                <h4 class="list-title">
+                                    Operating Systems
+                                </h4>
+                                <ul class="skill-list">
+                                    <li class="skill-list-item">
+                                        <i class="fa-brands fa-linux"></i>
+                                    </li>
+                                    <li class="skill-list-item">
+                                        <i class="fa-brands fa-windows"></i>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="app-box mt-5" data-aos="zoom-in" data-aos-duration="3000">
+                    <div class="box-header">
+                        <h1 class="box-header-title text-center">
+                            <i class="fa-solid fa-mobile"></i> Mobile App Development <i class="fa-solid fa-mobile"></i>
+                        </h1>
+                    </div>
+                    <div class="app-box-content mt-4">
+                        <div class="app-dev shadow-lg p-4">
+                            <h2 class="web-title">
+                                Native App Development
+                            </h2>
+                            <ul class="skill-list">
+                                <li class="skill-list-item">
+                                    <img src="images/kotlin.png" alt="Kotlin" class="icons">
+                                </li>
+                                <li class="skill-list-item">
+                                    <i class="fa-brands fa-react reactjs"></i>
+                                </li>
+                            </ul>
+                            <hr>
+                            <h2 class="web-title">
+                                Hybrid App Development
+                            </h2>
+                            <ul class="skill-list">
+                                <li class="skill-list-item">
+                                    <img src="images/jquery-mobile.png" alt="jQuery Mobile" class="icons">
+                                </li>
+                                <li class="skill-list-item">
+                                    <img src="images/ionic.png" alt="Ionic" class="icons">
+                                </li>
+                                <li class="skill-list-item">
+                                    <img src="images/phonegap.png" alt="Apache Cordova" class="icons">
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="parallax-1"></div>
+
+            <div id="work" class="work">
+                <div class="box-header">
+                    <h1 class="box-header-title">
+                        Projects
+                    </h1>
+                </div>
+                <div class="box-body mt-4">
+                    <div class="project" data-aos="flip-up" data-aos-duration="3000">
+                        <h2 class="project-title">
+                            Klopa.ba
+                        </h2>
+                       <a href="https://klopa.ba" target="_blank">
+                            <img src="images/project-1.jpg" alt="Klopa.ba" class="project-img shadow-lg">
+                       </a>
+                    </div>
+                    <div class="project" data-aos="flip-down" data-aos-duration="3000">
+                        <h2 class="project-title">
+                            Klesarstvo "Ero Stone"
+                        </h2>
+                       <a href="https://www.klesarstvo-erostone.com/" target="_blank">
+                            <img src="images/project-2.jpg" alt="Klesarstvo Ero Stone" class="project-img shadow-lg">
+                       </a>    
+                    </div>
+                </div>
+
+                <div class="box-body mt-5">
+                    <h2 class="project-title">
+                        More project can be found on my <a href="https://github.com/dinocilic"><i class="fa-brands fa-github"></i></a> page
+                    </h2>
+                </div>
+                
+            </div>
+            <div id="contact" class="contact">
+                <div class="contact-box">
+                    <h1 class="contact-title">
+                        Looking for a developer for your project, landing page or you need a python script, you came to the right spot. <br>
+                        Contact me and let's get your project started!
+                    </h1>
+                </div>
+                <div class="social-box">
+                    <div class="facebook" data-aos="zoom-up" data-aos-duration="3000">
+                        <a href="#">
+                            <i class="fa-brands fa-facebook"></i>
+                        </a>
+                    </div>
+                    <div class="instagram" data-aos="zoom-down" data-aos-duration="3000">
+                        <a href="#">
+                            <i class="fa-brands fa-instagram"></i>
+                        </a>
+                    </div>
+                    <div class="linkedin" data-aos="zoom-up" data-aos-duration="3000">
+                        <a href="#">
+                            <i class="fa-brands fa-linkedin"></i>
+                        </a>
+                    </div>
+                    <div class="github" data-aos="zoom-down" data-aos-duration="3000">
+                        <a href="#">
+                            <i class="fa-brands fa-github"></i>
+                        </a>
+                    </div>
+                    <div class="email" data-aos="zoom-up" data-aos-duration="3000">
+                        <a href="#">
+                            <i class="fa-regular fa-envelope"></i>
+                        </a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="footer">
+                <div class="footer-picture" data-aos="fade-up" data-aos-duration="3000">
+                    <img src="images/logo.png" alt="Dino Cilic | Full Stack Developer" class="footer-logo"> <br>
+                </div>
+                <div class="footer-content">
+                    <div id="map"></div>
+                    <div class="footer-quote">
+                        <blockquote class="blockquote">
+                            <p class="mb-0">Life is about balance be kind, but don't let people abuse you. Trust, but don't be deceived. Be content, but never stop improving yourself.</p> <br>
+                            <footer class="blockquote-footer"><cite title="Source Title">  Nishan Panwar</cite></footer>
+                        </blockquote>
+                    </div>
+                </div>
+                <div class="copyrights">
+                    <p>
+                        <i class="fa-regular fa-copyright"></i>  All right reserved by DC
+                    </p>
+                </div>
+            </div>
 
         </div>
-
-
-		<script src="https://code.jquery.com/jquery-3.5.1.min.js" integrity="sha256-9/aliU8dGd2tb6OSsuzixeV4y/faTqgFtohetphbbj0=" crossorigin="anonymous"></script>
-        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.6/umd/popper.min.js" integrity="sha384-wHAiFfRlMFy6i5SRaxvfOCifBUQy1xHdJ/yoi7FRNXMRBu5WHdZYu1hA6ZOblgut" crossorigin="anonymous"></script>
-		<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/js/bootstrap.min.js" integrity="sha384-B0UglyR+jN6CkvvICOB2joaf5I4l3gm9GU6Hc1og6Ls7i6U/mkkaduKaBhlAXv9k" crossorigin="anonymous"></script>
-		<script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/js/all.min.js"></script>
-		<script src="https://polyfill.io/v3/polyfill.min.js?features=default"></script>
-        <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyB7XYgG8uq2KLfUzQq2x2I1RJvKBO1DWVA&callback=initMap&libraries=&v=weekly" defer></script>
-        <script async src="main.js"></script>
-    </body>
+    
+        <script src="https://code.jquery.com/jquery-3.6.1.min.js" integrity="sha256-o88AwQnZB+VDvE9tvIXrMQaPlFFSUTR+nldQm1LuPXQ=" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-u1OknCvxWvY5kfmNBILK2hRnQC3Pr17a+RTT6rIHI7NnikvbZlHgTPOOmMi466C8" crossorigin="anonymous"></script>    
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script src="https://unpkg.com/leaflet@1.9.2/dist/leaflet.js" integrity="sha256-o9N1jGDZrf5tS+Ft4gbIK7mYMipq9lqpVJ91xHSyKhg=" crossorigin=""></script>
+    <script src="main.js"></script>
+    <script>
+        AOS.init()
+    </script>
+</body>
 </html>
