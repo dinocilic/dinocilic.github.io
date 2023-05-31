@@ -48,3 +48,60 @@ L.tileLayer('https://tile.openstreetmap.org/{z}/{x}/{y}.png', {
 }).addTo(map);
 
 map.invalidateSize();
+
+
+
+// $('#form').on('submit', function(event) {
+//     event.preventDefault(); // prevent reload
+
+//     // code fragment
+//     var data = {
+//         service_id: 'service_h8ojsdw',
+//         template_id: 'template_d53lxdx',
+//         user_id: 'OH64gcM6nM7iNsU1P',
+//         template_params: {
+//             'from_name': $("input[name=ime]").val() + $("input[name=prezime]").val(),
+//         }
+//     };
+
+//     $.ajax('https://api.emailjs.com/api/v1.0/email/send', {
+//         type: 'POST',
+//         data: data,
+//         contentType: false,
+//         processData: false
+//     }).done(function() {
+//         alert('Your mail is sent!');
+//     }).fail(function(error) {
+//         alert('Oops... ' + JSON.stringify(error));
+//     });
+// })
+
+// code fragment
+
+// code fragment
+// the form id is myForm
+$('#form').on('submit', function(event) {
+    event.preventDefault(); // prevent reload
+    
+    var formData = new FormData(this);
+    formData.append('service_id', 'service_h8ojsdw');
+    formData.append('template_id', 'template_d53lxdx');
+    formData.append('user_id', 'OH64gcM6nM7iNsU1P');
+    formData.append('from_name', $("input[name=ime]").val() + " " + $("input[name=prezime]").val() )
+    formData.append('message', $("textarea[name=poruka]").val() )
+ 
+    $.ajax('https://api.emailjs.com/api/v1.0/email/send-form', {
+        type: 'POST',
+        data: formData,
+        contentType: false, // auto-detection
+        processData: false // no need to parse formData to string
+    }).done(function() {
+        console.log('Your mail is sent!');
+        location.reload();
+    }).fail(function(error) {
+        console.log('Oops... ' + JSON.stringify(error));
+    });
+});
+// code fragment
+
+// Contact Form

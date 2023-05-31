@@ -20,12 +20,13 @@
         <link rel="icon" type="image/png" sizes="32x32" href="images/favicon-32x32.png">
         <link rel="icon" type="image/png" sizes="16x16" href="images/favicon-16x16.png">
         <link rel="icon" type="image/png" sizes="192x192" href="images/android-chrome-192x192.png">
-        <link rel="manifest" href="/site.webmanifest">
+        <link rel="manifest" href="images/site.webmanifest">
         <link rel="dns-prefetch" href="//ajax.googleapis.com">
         <link rel="dnf-prefetch" href="//fonts.googleapis.com">
         <link rel="dnf-prefetch" href="//cdnjs.com/">
         <!-- CSS only -->
-        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-iYQeCzEYFbKjA/T2uDLTpkwGzCiq6soy8tYaI1GyVh/UjpbCx/TYkiZhlZB6+fzT" crossorigin="anonymous">        
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-KK94CHFLLe+nY2dmCWGMq91rCGa5gtU4mk92HdvYe+M/SXH301p5ILy+dN9+nJOZ" crossorigin="anonymous">        
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css">
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css" integrity="sha512-xh6O/CkQoPOWDdYTDqeRdPCVd1SpvCA9XXcUnZS2FmJNp1coAFzvtCN9BmamE+4aHK8yyUHUSCcJHgXloTyT2A==" crossorigin="anonymous" referrerpolicy="no-referrer" />        
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.5.2/animate.min.css">
         <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
@@ -39,37 +40,40 @@
 
         <div class="main-wrapper">
 
-                <!-- NAVBAR -->
-                <nav id="navbar" class="navbar navbar-expand-lg navbar-light bg-light">
+            <!-- NAVBAR -->
+            <nav id="navbar" class="navbar navbar-expand-lg navbar-light bg-light">
 
-                    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-                    <span class="navbar-toggler-icon"></span>
-                    </button>
-                    <a href="#home" class="nav-brand">
-                        <img src="images/logo.png" alt="Dino Cilic logo" class="logo">
-                    </a>
-                    <div class="collapse navbar-collapse" id="navbarNav">
-                    <ul class="nav nav-fill nav-tabs">
-                        <li class="nav-item active">
-                        <a class="nav-link" href="#header">Home <span class="sr-only">(current)</span></a>
-                        </li>
-                        <li class="nav-item">
-                        <a class="nav-link" href="#about">About</a>
-                        </li>
-                        <li class="nav-item">
-                            <a href="#work" class="nav-link">Work</a>
-                        </li>
-                        <li class="nav-item">
-                        <a class="nav-link" href="#skills">Skills</a>
-                        </li>
-                        <li class="nav-item">
-                        <a class="nav-link" href="#contact">Contact</a>
-                        </li>
-                    </ul>
-                    </div>
-                </nav>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+                </button>
+                <a href="#home" class="nav-brand">
+                    <img src="images/logo.png" alt="Dino Cilic logo" class="logo">
+                </a>
+                <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="nav nav-fill nav-tabs">
+                    <li class="nav-item active">
+                    <a class="nav-link" href="#header">Home <span class="sr-only">(current)</span></a>
+                    </li>
+                    <li class="nav-item">
+                    <a class="nav-link" href="#about">About</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="#services" class="nav-link">Services</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="#work" class="nav-link">Work</a>
+                    </li>
+                    <li class="nav-item">
+                    <a class="nav-link" href="#skills">Skills</a>
+                    </li>
+                    <li class="nav-item">
+                    <a class="nav-link" href="#contact">Contact</a>
+                    </li>
+                </ul>
+                </div>
+            </nav>
 
-            <div class="header" id="header">
+            <div class="header" id="header" data-aos="flip-up">
                 <h1 class="header-title">
                     Dino Čilić
                 </h1>
@@ -80,218 +84,382 @@
             <div class="parallax"></div>
 
             <div id="about" class="about">
-                <div class="about-content">
-                    <div class="box">
-                        <div class="box-header">
-                            <h1 class="text-center box-title">
-                                <i class="fa-solid fa-note-sticky"></i> About me
-                            </h1>
-                        </div>
-                        <div class="box-content">
-                            <h1 class="box-text">
-								Hello, my name is Dino Čilić and it's very nice to meet you.
-								I am from Bosnia and Herzegovina, from a small town on south of the country called Jablanica.
-                            </h1>
-                            <h1 class="box-text">
-								I am self taught, passionate Web Developer and Linux System Administrator. I am also a gamer and a huge fan of World of Warcraft and Blizzard
-								I have a BA in business economy attended at American University and Logos College. But regardless of the fact that education I gained gave me great insight into the world of business and management. <br>
-								I never felt that is the place in which I should put all my energy in. 
-                            </h1>
-                            <h1 class="box-text">
-                                I was always interested in technology, websites, software and how they work, which drove me to learn more about it. <br>
-                                Once I started coding, at my first line of <i class="fa-brands fa-html5"></i> code I knew, this is where my passion lies!
-                            </h1>
-                        </div>
+                <div class="about-header">
+                    <div class="about-header_info">
+                        <h2 class="fs-2 mb-4">
+                            About me
+                        </h2>
+                        <h2 class="fs-2 mt-4 mb-4 fw-bold">
+                            I am Dino Čilić
+                        </h2>
+                        <h4 class="fs-5 fw-medium text-center text-break">
+                        I am a full stack developer with Linux skills, I thrive on the challenge of crafting robust and seamless digital solutions.  
+                        </h4>
                     </div>
-                </div>
-                <div class="about-picture" data-aos="fade-in" data-aos-duration="3000">
-                    <img src="images/profile.jpg" alt="Dino Cilic, profilna" class="about-img">
-                </div>
-            </div>
-            <div class="parallax"></div>
 
-            <div id="skills" class="skills">
-                <div class="web-box mt-5">
-                    <div class="box-header mb-4">
-                        <h1 class="box-header-title text-center">
-                            <i class="fa-solid fa-code"></i>   Website Development & Web Design <i class="fa-solid fa-code"></i>
-                        </h1>
+                    <div class="about-header_image mt-5" data-aos="flip-left" data-aos-duration="2000">
+                        <img src="images/profile.jpg" alt="Dino Cilic, Full Stack Developer" class="image">
                     </div>
-                    <div class="web-box-content" >
-                        <div class="front-end shadow-lg p-4" data-aos="zoom-in-up" data-aos-duration="3000">
-                            <h2 class="web-title">
-                                Front-end Development
-                            </h2>
-                            <div class="box-list">
-                                <ul class="skill-list">
-                                    <li class="skill-list-item">
-                                        <i class="fa-brands fa-html5 html5"></i>
-                                    </li>
-                                    
-                                    <li class="skill-list-item">
-                                        <i class="fa-brands fa-css3 css3"></i>
-                                    </li>
-                                    <li class="skill-list-item">
-                                        <i class="fa-brands fa-js js"></i>
-                                    </li>
-                                    <li class="skill-list-item">
-                                        <i class="fa-brands fa-bootstrap bootstrap"></i>                          
-                                    </li>
-                                    <li class="skill-list-item">
-                                        <i class="fa-brands fa-sass"></i>
-                                    </li>
-                                </ul>
-                                <hr>
-                                <h4 class="list-title">
-                                    Frameworks
-                                </h4>
-                                <ul class="skill-list">
-                                    <li class="skill-list-item">
-                                        <i class="fa-brands fa-vuejs vuejs"></i>
-                                    </li>
-                                    <li class="skill-list-item">
-                                        <i class="fa-brands fa-react reactjs"></i>
-                                    </li>
-                                </ul>
-    
-                                <hr>
-                                <h4 class="list-title">
-                                    Graphics
-                                </h4>
-                                <ul class="skill-list">
-                                    <li class="skill-list-item graphics">
-                                        <img src="images/gimp.png" alt="Gimp" class="icons">
-                                    </li>
-                                    <li class="skill-list-item graphics">
-                                        <img src="images/canva.png" alt="Canva" class="icons">
-                                    </li>
-                                    <li class="skill-list-item graphics">
-                                        <img src="images/inkscape.png" alt="Inkskape" class="icons">
-                                    </li>
-                                </ul>
-                                <hr>
-                                <h4 class="list-title">
-                                    Editors
-                                </h4>
-                                <ul class="skill-list">
-                                    <li class="skill-list-item">
-                                        <img src="images/vscode.png" alt="Visual Studio Code" class="icons">
-                                    </li>
-                                    <li class="skill-list-item">
-                                        <img src="images/atom.png" alt="Atom" class="icons">
-                                    </li>
-                                </ul>
-                            </div>
-
-                        </div>
-                        <div class="back-end shadow-lg p-4" data-aos="zoom-in-down" data-aos-duration="3000">
-                            <h2 class="web-title">
-                                Back-end Development
-                            </h2>
-                            <div class="box-list">
-                                <ul class="skill-list">
-                                    <li class="skill-list-item nodejs">
-                                        <img src="images/node.png" alt="NodeJS" class="icons">                                        
-                                    </li>
-                                    <li class="skill-list-item python">
-                                        <img src="images/python.png" alt="Python" class="icons">                 
-                                    </li>
-                                    <li class="skill-list-item">
-                                        <i class="fa-brands fa-php php"></i>
-                                    </li>
-                                </ul>
-                                <hr>
-                                <h4 class="list-title">
-                                    Databases
-                                </h4>
-                                <ul class="skill-list">
-                                    <li class="skill-list-item database">
-                                        <img src="images/mongodb.png" alt="Mongodb" class="icons">
-                                    </li>
-                                    <li class="skill-list-item database">
-                                        <img src="images/mysql.png" alt="Mongodb" class="icons">
-                                    </li>        
-                                    <li class="skill-list-item database">
-                                        <img src="images/firebase.png" alt="Firebase" class="icons">
-                                    </li>
-                                </ul>
-                                <hr>     
-                                <h4 class="list-title">
-                                    Version Control
-                                </h4>
-                                <ul class="skill-list">
-                                    <li class="skill-list-item">
-                                        <i class="fa-brands fa-git"></i>
-                                    </li>
-                                    <li class="skill-list-item">
-                                        <i class="fa-brands fa-github"></i>
-                                    </li>
-                                </ul>
-                                <hr>
-                                <h4 class="list-title">
-                                    Project Management
-                                </h4>
-                                <ul class="skill-list">
-                                    <li class="skill-list-item">
-                                        <img src="images/clickup.png" alt="ClickUp" class="icons">
-                                    </li>
-                                </ul>
-    
-                                <hr>
-                                <h4 class="list-title">
-                                    Operating Systems
-                                </h4>
-                                <ul class="skill-list">
-                                    <li class="skill-list-item">
-                                        <i class="fa-brands fa-linux"></i>
-                                    </li>
-                                    <li class="skill-list-item">
-                                        <i class="fa-brands fa-windows"></i>
-                                    </li>
-                                </ul>
-                            </div>
-                        </div>
+                    <div class="about-content_slogan mt-5 mb-5">
+                        <h4 class="about-content_text fs-4 fst-italic fw-bold" data-aos="flip-right" data-aos-duration="2000">
+                            "Crafting Engaging Web Experiences with Expertise and Innovation"
+                        </h4>
                     </div>
-                </div>
-                <div class="app-box mt-5" data-aos="zoom-in" data-aos-duration="3000">
-                    <div class="box-header">
-                        <h1 class="box-header-title text-center">
-                            <i class="fa-solid fa-mobile"></i> Mobile App Development <i class="fa-solid fa-mobile"></i>
-                        </h1>
-                    </div>
-                    <div class="app-box-content mt-4">
-                        <div class="app-dev shadow-lg p-4">
-                            <h2 class="web-title">
-                                Native App Development
-                            </h2>
-                            <ul class="skill-list">
-                                <li class="skill-list-item">
-                                    <img src="images/kotlin.png" alt="Kotlin" class="icons">
-                                </li>
-                                <li class="skill-list-item">
-                                    <i class="fa-brands fa-react reactjs"></i>
-                                </li>
-                            </ul>
-                            <hr>
-                            <h2 class="web-title">
-                                Hybrid App Development
-                            </h2>
-                            <ul class="skill-list">
-                                <li class="skill-list-item">
-                                    <img src="images/jquery-mobile.png" alt="jQuery Mobile" class="icons">
-                                </li>
-                                <li class="skill-list-item">
-                                    <img src="images/ionic.png" alt="Ionic" class="icons">
-                                </li>
-                                <li class="skill-list-item">
-                                    <img src="images/phonegap.png" alt="Apache Cordova" class="icons">
-                                </li>
-                            </ul>
-                        </div>
+                    <div class="about-content_info fw-light text-break mb-5" data-aos="zoom-in-up" data-aos-duration="2000">
+                        <p class="about-content_text fs-5">
+                             When I'm not immersed in coding, you'll often find me outdoors, hiking along scenic trails and immersing myself in the beauty of nature. Besides my love for hiking, I am a proud dog owner and relish every moment I get to spend with my furry companion. 
+                        </p>
+                        <p class="about-content_text fs-5">
+                            Traveling is another one of my passions. Exploring new places, embracing diverse cultures, and encountering breathtaking landscapes fills me with a sense of wonder and broadens my perspective.
+                        </p>
+                        <p class="about-content_text fs-5">
+                            I'm excited to combine my skills in web development with my love for life's simple pleasures to create meaningful and engaging digital experiences.      
+                        </p>
                     </div>
                 </div>
             </div>
+
             <div class="parallax-1"></div>
+
+            <div id="services" class="services">
+
+                <div class="services-header mt-5">
+                    <div class="services-header_info">
+                        <h2 class="services-header_title fs-1">
+                            Services offered
+                        </h2>
+                    </div>
+                </div>
+
+                <div class="services-content">
+                    <div class="services-content_main">
+                        <div class="services-content_box container mt-5 mb-5" data-aos="fade-up" data-aos-duration="3000">
+                            <div class="row">
+                                <div class="col-6 col-sm-6 col-md-6 col-lg-4 col-xl-4 services-content_cards">
+                                    <div class="card">
+                                        <div class="card-image">
+                                            <img src="images/website_development.png" alt="" class="card-img">
+                                        </div>
+                                        <div class="card-header">
+                                            <h4 class="fs-5">
+                                                Web Development
+                                            </h4>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-6 col-sm-6 col-md-6 col-lg-4 col-xl-4 services-content_cards">
+                                    <div class="card">
+                                        <div class="card-image">
+                                            <img src="images/software_development.png" alt="" class="card-img">
+                                        </div>
+                                        <div class="card-header">
+                                            <h4 class="fs-5">
+                                                Software Development
+                                            </h4>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-6 col-sm-6 col-md-6 col-lg-4 col-xl-4 services-content_cards">
+                                    <div class="card">
+                                        <div class="card-image">
+                                            <img src="images/python_development.png" alt="" class="card-img">
+                                        </div>
+                                        <div class="card-header">
+                                            <h4 class="fs-5">
+                                                Python Development
+                                            </h4>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-6 col-sm-6 col-md-6 col-lg-4 col-xl-4 services-content_cards">
+                                    <div class="card">
+                                        <div class="card-image">
+                                            <img src="images/web_scraping.png" alt="" class="card-img">
+                                        </div>
+                                        <div class="card-header">
+                                            <h4 class="fs-5">
+                                                Web Scraping
+                                            </h4>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-6 col-sm-6 col-md-6 col-lg-4 col-xl-4 services-content_cards">
+                                    <div class="card">
+                                        <div class="card-image">
+                                            <img src="images/database_development.png" alt="" class="card-img">
+                                        </div>
+                                        <div class="card-header">
+                                            <h4 class="fs-5">
+                                                Database Development
+                                            </h4>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-6 col-sm-6 col-md-6 col-lg-4 col-xl-4 services-content_cards">
+                                    <div class="card">
+                                        <div class="card-image">
+                                            <img src="images/linux_admin.png" alt="" class="card-img">
+                                        </div>
+                                        <div class="card-header">
+                                            <h4 class="fs-5">
+                                                Linux Administration
+                                            </h4>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                        </div>
+                    </div>
+                </div>
+
+
+            </div>
+            
+            <div class="parallax-2"></div>
+            
+            <div class="skills" id="skills">
+                <div class="skills-header mt-5">
+                    <div class="skills-header_info">
+                        <h2 class="skills-header_title fs-1">
+                            Skills & Frameworks
+                        </h2>
+                    </div>
+                </div>
+
+                <div class="skills-content mt-4 container">
+
+                    <div class="skills-content_main">
+                        <div class="row" data-aos="fade-down" data-aos-duration="3000">
+                            <div class="col-12 col-sm-12 col-md-12 col-lg-12 col-xl-12 mb-4">
+                                <div class="skills-content_box">
+                                    <div class="skills-content_info">
+                                        <h4 class="skills-content_info-title fs-2 mb-4">
+                                            Website Development/Design
+                                        </h4>
+                                        <!-- <p class="skills-content_info-text">
+                                            The goal of website development is to create visually stunning, user-friendly websites that leave a lasting impression.
+                                        </p> -->
+                                    </div>
+        
+                                    <div class="skills-content_body wd-box">
+                                        <div class="skills-body_box front-box">
+                                            <div class="skills-body_box-header">
+                                                <h4 class="skills-body_box-header-title text-center">
+                                                    Front-end Development
+                                                </h4>
+                                            </div>
+                                            <div class="skills-body_box-main">
+                                                <i class="fa-brands fa-html5"></i>
+                                                <i class="fa-brands fa-css3-alt"></i>
+                                                <i class="fa-brands fa-bootstrap"></i>
+                                            </div>
+                                            <div class="skills-body_box-main">
+                                                <i class="fa-brands fa-square-js"></i>
+                                                <i class="fa-brands fa-vuejs"></i>
+                                                <i class="fa-brands fa-react"></i>
+                                            </div>
+                                        </div>
+                                        <div class="skills-body_box back-box">
+                                            <div class="skills-body_box-header">
+                                                <h4 class="skills-body_box-header-title text-center">
+                                                    Back-end Development
+                                                </h4>
+                                            </div>   
+                                            <div class="skills-body_box-main ">
+                                                <img src="images/node.png" alt="" class="skill-icons">
+                                                <img src="images/python.png" alt="" class="skill-icons">
+                                                <img src="images/php.png" alt="" class="skill-icons">
+                                            </div>     
+                                            <div class="skills-body_box-main mt-4">
+                                                <img src="images/express-js.png" alt="" class="skill-icons">
+                                                <img src="images/django.png" alt="" class="skill-icons">
+                                                <img src="images/flask.png" alt="" class="skill-icons">
+                                            </div>                         
+                                        </div>
+
+                                        <div class="skills-body_box"> 
+                                            <div class="skills-body_box-header">
+                                                <h4 class="skills-body_box-header-title text-center">
+                                                    Graphics
+                                                </h4>
+                                            </div> 
+                                            <div class="skills-body_box-main design-box">
+                                                <img src="images/canva.png" alt="" class="skill-icons">
+                                                <img src="images/gimp.png" alt="" class="skill-icons">
+                                                <img src="images/inkscape.png" alt="" class="skill-icons">
+                                            </div>                             
+                                        </div>
+                                    </div>
+
+                                </div>
+                            </div>
+                            <div class="col-12 col-sm-12 col-md-6 col-lg-6 col-xl-6 mb-4">
+                                <div class="skills-content_box">
+                                    <div class="skills-content_info">
+                                        <h4 class="skills-content_info-title fs-2 mb-4">
+                                            Editors
+                                        </h4>
+                                        <!-- <p class="skills-content_info-text">
+                                            Editors are a primary tool for any development proces. There are many editors today and each  editor has its own strengths and features, and the choice depends on the specific needs, preferences, and workflows of individual developers.
+                                        </p> -->
+                                    </div>
+        
+                                    <div class="skills-content_body">
+                                        <div class="skills-body_box mt-5"> 
+                                            <div class="skills-body_box-main editor-box">
+                                                <img src="images/vscode.png" alt="" class="skill-icons">
+                                                <img src="images/atom.png" alt="" class="skill-icons">
+                                                <img src="images/sublime_text.png" alt="" class="skill-icons">
+                                            </div>                           
+                                        </div>
+                                    </div>
+        
+                                </div>
+                            </div>
+
+                            <div class="col-12 col-sm-12 col-md-6 col-lg-6 col-xl-6  mb-4">
+                                <div class="skills-content_box">
+                                    <div class="skills-content_info">
+                                        <h4 class="skills-content_info-title fs-2 mb-4">
+                                            Database Development
+                                        </h4>
+                                        <!-- <p class="skills-content_info-text">
+                                            Whether it's developing a new database system or enhancing an existing one, I can ensure efficient data storage, creation, retrieval, and management.
+                                        </p> -->
+                                    </div>
+        
+                                    <div class="skills-content_body">
+                                        <div class="skills-body_box mt-5">  
+                                            <div class="skills-body_box-main database-box">
+                                                <img src="images/firebase.png" alt="" class="skill-icons">
+                                                <img src="images/mongodb.png" alt="" class="skill-icons">
+                                                <img src="images/mysql.png" alt="" class="skill-icons">
+                                            </div>                           
+                                        </div>
+                                    </div>
+        
+                                </div>
+                            </div>
+
+                            <div class="col-12 col-sm-12 col-md-6 col-lg-6 col-xl-6  mb-4">
+                                <div class="skills-content_box">
+                                    <div class="skills-content_info">
+                                        <h4 class="skills-content_info-title fs-2 mb-4">
+                                            Python Development
+                                        </h4>
+                                        <!-- <p class="skills-content_info-text">
+                                            Python is used to create software applications, web apps, scripts, automation, data analysis and many more. 
+                                        </p> -->
+                                    </div>
+        
+                                    <div class="skills-content_body">
+                                        <div class="skills-body_box w-100 mt-5">  
+                                            <div class="skills-body_box-main w-100 python-box">
+                                                <div class="progress" role="progressbar" aria-label="Info example" aria-valuenow="50" aria-valuemin="0" aria-valuemax="100">
+                                                    <div class="progress-bar bg-info text-dark progress-bar-striped fw-bold" style="width: 100%"> <small class="text-center">Web Scraping</small></div>
+                                                </div>
+                                                <div class="progress" role="progressbar" aria-label="Info example" aria-valuenow="50" aria-valuemin="0" aria-valuemax="100">
+                                                    <div class="progress-bar bg-info text-dark progress-bar-striped fw-bold" style="width: 100%"> <small class="text-center">Web Development</small> </div>
+                                                </div>
+                                                <div class="progress" role="progressbar" aria-label="Info example" aria-valuenow="50" aria-valuemin="0" aria-valuemax="100">
+                                                    <div class="progress-bar bg-info text-dark progress-bar-striped fw-bold" style="width: 90%"> <small class="text-center">Software Testing</small> </div>
+                                                </div>
+                                                <div class="progress" role="progressbar" aria-label="Info example" aria-valuenow="50" aria-valuemin="0" aria-valuemax="100">
+                                                    <div class="progress-bar bg-info text-dark progress-bar-striped fw-bold" style="width: 100%"><small class="text-center">Automation</small></div>
+                                                </div>
+                                                <div class="progress" role="progressbar" aria-label="Info example" aria-valuenow="50" aria-valuemin="0" aria-valuemax="100">
+                                                    <div class="progress-bar bg-info text-dark progress-bar-striped fw-bold" style="width: 100%"><small class="text-center">GUI Development</small></div>
+                                                </div>
+                                            </div>                           
+                                        </div>
+                                    </div>
+        
+                                </div>
+                            </div>
+
+                            <div class="col-12 col-sm-12 col-md-6 col-lg-6 col-xl-6  mb-4">
+                                <div class="skills-content_box">
+                                    <div class="skills-content_info">
+                                        <h4 class="skills-content_info-title fs-2 mb-4">
+                                            Linux Administration
+                                        </h4>
+                                        <!-- <p class="skills-content_info-text">
+                                            Linux system administration involves the management, maintenance, and troubleshooting of Linux-based computer systems, with a focus on system configuration, security, performance, and reliability.
+                                        </p> -->
+                                    </div>
+        
+                                    <div class="skills-content_body">
+                                        <div class="skills-body_box mt-5">  
+                                            <div class="skills-body_box-main database-box">
+                                                <img src="images/debian.png" alt="" class="skill-icons">
+                                                <img src="images/pop-os.png" alt="" class="skill-icons">
+                                                <img src="images/manjaro.png" alt="" class="skill-icons">
+                                            </div>                           
+                                        </div>
+                                    </div>
+        
+                                </div>
+                            </div>
+
+                            <div class="col-12 col-sm-12 col-md-12 col-lg-12 col-xl-12 mb-4">
+                                <div class="skills-content_box technical-box">
+                                    <div class="skills-content_info">
+                                        <h4 class="skills-content_info-title fs-2 mb-4">
+                                            Technical Skills
+                                        </h4>
+                                        <!-- <p class="skills-content_info-text">
+                                            Various technical skills, such as Version Control, Project Management, Google Spreadsheets, MS office out of many others.
+                                        </p> -->
+                                    </div>
+        
+                                    <div class="skills-content_body">
+                                        <div class="skills-body_box">  
+                                            <div class="skills-body_box-header">
+                                                <h4 class="skills-body_box-header-title fw-bold text-center">
+                                                    Version Control
+                                                </h4>
+                                            </div>  
+                                            <div class="skills-body_box-main">
+                                                <i class="fa-brands fa-git"></i>
+                                                <i class="fa-brands fa-github"></i>
+                                                <i class="fa-brands fa-gitlab" style="color: #e14328;"></i>
+                                            </div>                           
+                                        </div>
+                                        <div class="skills-body_box mt-4">  
+                                            <div class="skills-body_box-header">
+                                                <h4 class="skills-body_box-header-title fw-bold text-center">
+                                                    Project Management/CRM
+                                                </h4>
+                                            </div>   
+                                            <div class="skills-body_box-main">
+                                                <img src="images/clickup.png" alt="" class="skill-icons clickup">
+                                                <img src="images/hubspot.png" alt="" class="skill-icons hubspot">
+                                            </div>                           
+                                        </div>  
+                                        <div class="skills-body_box mt-4">  
+                                            <div class="skills-body_box-header">
+                                                <h4 class="skills-body_box-header-title fw-bold text-center">
+                                                    Cloud Hosting
+                                                </h4>
+                                            </div>   
+                                            <div class="skills-body_box-main hosting-box">
+                                                <img src="images/netlify.png" alt="" class="skill-icons clickup">
+                                                <img src="images/heroku.png" alt="" class="skill-icons hubspot">
+                                                <img src="images/digital-ocean.png" alt="" class="skill-icons hubspot">
+                                            </div>                           
+                                        </div>  
+                                    </div>
+                                      
+                                </div>
+                            </div>
+
+                        </div>
+                    </div>
+                    
+                </div>
+
+            </div>
 
             <div id="work" class="work">
                 <div class="box-header">
@@ -299,66 +467,94 @@
                         Projects
                     </h1>
                 </div>
-                <div class="box-body mt-4">
-                    <div class="project" data-aos="flip-up" data-aos-duration="3000">
-                        <h2 class="project-title">
-                            Klopa.ba
-                        </h2>
-                       <a href="https://klopa.ba" target="_blank">
-                            <img src="images/project-1.jpg" alt="Klopa.ba" class="project-img shadow-lg">
-                       </a>
+                <div class="row container d-flex mt-4">
+                    <div class="col-12 col-sm-12 col-md-6 col-lg-6 col-xl-6">
+                        <div class="project" data-aos="flip-up" data-aos-duration="3000">
+                            <h2 class="project-title">
+                                Klopa.ba
+                            </h2>
+                           <a href="https://klopa.ba" target="_blank">
+                                <img src="images/project-1.jpg" alt="Klopa.ba" class="project-img shadow-lg">
+                           </a>
+                        </div>
                     </div>
-                    <div class="project" data-aos="flip-down" data-aos-duration="3000">
-                        <h2 class="project-title">
-                            Klesarstvo "Ero Stone"
-                        </h2>
-                       <a href="https://www.klesarstvo-erostone.com/" target="_blank">
-                            <img src="images/project-2.jpg" alt="Klesarstvo Ero Stone" class="project-img shadow-lg">
-                       </a>    
+                    <div class="col-12 col-sm-12 col-md-6 col-lg-6 col-xl-6 work-box">
+                        <div class="project" data-aos="flip-down" data-aos-duration="3000">
+                            <h2 class="project-title">
+                                Klesarstvo "Ero Stone"
+                            </h2>
+                           <a href="https://www.klesarstvo-erostone.com/" target="_blank">
+                                <img src="images/project-2.jpg" alt="Klesarstvo Ero Stone" class="project-img shadow-lg">
+                           </a>    
+                        </div>
                     </div>
                 </div>
 
                 <div class="box-body mt-5">
                     <h2 class="project-title">
-                        More project can be found on my <a href="https://github.com/dinocilic"><i class="fa-brands fa-github"></i></a> page
+                        Rest of the projects and similar on my <a href="https://github.com/dinocilic"><i class="fa-brands fa-github"></i></a> page
                     </h2>
                 </div>
                 
             </div>
-            <div id="contact" class="contact">
-                <div class="contact-box">
-                    <h1 class="contact-title">
-                        Looking for a developer for your project, landing page or you need a python script, you came to the right spot. <br>
-                        Contact me and let's get your project started!
-                    </h1>
+
+            <div id="contact" class="contact mb-5 mt-5 container">
+
+                <div class="contact-form">
+                    <div class="contact-form_header">
+                        <h3 class="contact-form_header-title text-center fw-bold fs-1">
+                            Contact me
+                        </h3>
+                        <p class="fw-bold p-1 text-center">
+                            Let's get your project started!
+                        </p>
+                    </div>
+                    <div class="contact-form_main">
+                        <form action="#" class="form" id="form">
+                            <div class="form-group mb-3 mt-3">
+                                <!-- <label for="name" class="form-label">Ime *</label> -->
+                                <input type="text" name="ime" class="form-control" placeholder="Your First Name" required> 
+                            </div>
+                            <div class="form-group mb-3">
+                                <!-- <label for="name" class="form-label">Ime *</label> -->
+                                <input type="text" name="prezime" class="form-control" placeholder="Your Last Name" required>
+                            </div>
+                            <div class="form-group mb-3">
+                                <!-- <label for="name" class="form-label">Ime *</label> -->
+                                <input type="email" name="email" class="form-control" placeholder="Your Email Address" required>
+                            </div>
+                            <div class="form-group">
+                                <!-- <label for="name" class="form-label">Ime *</label> -->
+                                <textarea name="poruka" id="poruka" cols="30" rows="10" class="form-control" placeholder="Your Message" required></textarea>
+                            </div>
+                            <div class="form-buttons mt-3">
+                                <button class="btn btn-primary">Send</button>
+                            </div>
+                        </form>
+                    </div>
                 </div>
-                <div class="social-box">
-                    <div class="facebook" data-aos="zoom-up" data-aos-duration="3000">
-                        <a href="https://www.facebook.com/dino.cilic" target="_blank">
-                            <i class="fa-brands fa-facebook"></i>
-                        </a>
-                    </div>
-                    <div class="instagram" data-aos="zoom-down" data-aos-duration="3000">
-                        <a href="https://www.instagram.com/dinocilic/" target="_blank">
-                            <i class="fa-brands fa-instagram"></i>
-                        </a>
-                    </div>
-                    <div class="linkedin" data-aos="zoom-up" data-aos-duration="3000">
+
+                <div class="contact-social mt-5 mb-5">
+                    <h3 class="contact-social_title text-center p-1 fw-bold">
+                        Find me on social networks 
+                    </h3>
+                    <div class="social-links mt-3">
                         <a href="https://www.linkedin.com/in/dinocilic/" target="_blank">
-                            <i class="fa-brands fa-linkedin"></i>
+                           <i class="fa-brands fa-linkedin"></i>
                         </a>
-                    </div>
-                    <div class="github" data-aos="zoom-down" data-aos-duration="3000">
+                        <a href="https://www.facebook.com/dino.cilic" target="_blank">
+                            <i class="fa-brands fa-square-facebook"></i>
+                        </a>
                         <a href="https://github.com/dinocilic/" target="_blank">
                             <i class="fa-brands fa-github"></i>
                         </a>
-                    </div>
-                    <div class="email" data-aos="zoom-up" data-aos-duration="3000">
-                        <a href="mailto:dino.cilic@gmail.com">
-                            <i class="fa-regular fa-envelope"></i>
+                        <a href="mailto:dino.cilic@gmail.com" target="_blank">
+                            <i class="fa-solid fa-envelope"></i>
                         </a>
+                        
                     </div>
                 </div>
+
             </div>
 
             <div class="footer">
@@ -366,30 +562,40 @@
                     <img src="images/logo.png" alt="Dino Cilic | Full Stack Developer" class="footer-logo"> <br>
                 </div>
                 <div class="footer-content">
-                    <div id="map"></div>
+                    <div class="footer-map">
+                        <div id="map"></div>
+                    </div>
                     <div class="footer-quote">
                         <blockquote class="blockquote">
-                            <p class="mb-0">Life is about balance be kind, but don't let people abuse you. Trust, but don't be deceived. Be content, but never stop improving yourself.</p> <br>
+                            <p class="mb-0 fs-4">Life is about balance be kind, but don't let people abuse you. Trust, but don't be deceived. Be content, but never stop improving yourself.</p> <br>
                             <footer class="blockquote-footer"><cite title="Source Title">  Nishan Panwar</cite></footer>
                         </blockquote>
                     </div>
                 </div>
-                <div class="copyrights">
-                    <p>
-                        <i class="fa-regular fa-copyright"></i>  All right reserved by DC
-                    </p>
+                <div class="footer-copyrights">
+                    <div class="copyrights">
+                        <p>
+                            <i class="fa-regular fa-copyright"></i>  All right reserved by DC
+                        </p>
+                    </div>
                 </div>
             </div>
 
         </div>
     
         <script src="https://code.jquery.com/jquery-3.6.1.min.js" integrity="sha256-o88AwQnZB+VDvE9tvIXrMQaPlFFSUTR+nldQm1LuPXQ=" crossorigin="anonymous"></script>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-u1OknCvxWvY5kfmNBILK2hRnQC3Pr17a+RTT6rIHI7NnikvbZlHgTPOOmMi466C8" crossorigin="anonymous"></script>    
-    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
-    <script src="https://unpkg.com/leaflet@1.9.2/dist/leaflet.js" integrity="sha256-o9N1jGDZrf5tS+Ft4gbIK7mYMipq9lqpVJ91xHSyKhg=" crossorigin=""></script>
-    <script src="main.js"></script>
-    <script>
-        AOS.init()
-    </script>
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ENjdO4Dr2bkBIFxQpeoTz1HIcje39Wm4jDKdf19U8gI4ddQ3GYNS7NTKfAdVQSZe" crossorigin="anonymous"></script>    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+        <script src="https://unpkg.com/leaflet@1.9.2/dist/leaflet.js" integrity="sha256-o9N1jGDZrf5tS+Ft4gbIK7mYMipq9lqpVJ91xHSyKhg=" crossorigin=""></script>
+        <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"></script>
+        <script src="main.js"></script>
+        <!-- <script>
+            AOS.init()
+        </script> -->
+        <script>
+            (function(){
+                emailjs.init("OH64gcM6nM7iNsU1P");
+            })();
+            AOS.init();
+        </script>
 </body>
 </html>

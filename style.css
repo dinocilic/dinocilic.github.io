@@ -1,11 +1,50 @@
 html, body {
     height: auto;
     width: 100%;
-    font-family: 'Courier New', Courier, serif;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
     scroll-behavior: smooth;
     margin: 0;
     padding: 0;
     background-color: #f2f2f2;
+}
+
+/* Icon colors */
+.fa-html5 {
+    color: #f16529;
+}
+
+.fa-css3-alt {
+    color: #1572b6;
+}
+
+.fa-bootstrap {
+    color: #7911f8;
+}
+
+.fa-square-js {
+    color: #f0db4f;
+}
+
+.fa-vuejs {
+    color: #41b883;
+}
+
+.fa-react {
+    color: #61dafb;
+}
+
+.fa-node {
+    color: #333333;
+}
+
+.fa-python {
+    color: #3b78a8;
+}
+
+.skill-icons {
+    height: 65px;
+    padding: 1em;
+    max-width: 100%;
 }
 
 /* Navbar CSS */
@@ -15,6 +54,7 @@ html, body {
     display: none;
     width: 100%;
     z-index: 99;
+    border: none;
 }
 
 .nav {
@@ -43,7 +83,6 @@ html, body {
 .nav-link:hover {
     background-color: #f2f2f2;
     color: #080D19;
-    margin: 0;
 }
 
 .logo {
@@ -58,8 +97,8 @@ html, body {
     justify-content: center;
     align-items: center;
     flex-direction: column;
-    background: url('images/brackets.jpg');
-    background-size: 40%;
+    background: url('images/computer_1.png');
+    background-size: 45%;
     background-repeat: no-repeat;
     background-position: top;
 }
@@ -74,61 +113,310 @@ html, body {
     font-weight: bold;
 }
 
+/* Hero */
+.hero-section {
+    height: 100vh;
+}
+
+
 /* About CSS*/
 .about {
     width: 100%;
-    height: 100vh;
+    height: 100%;
     z-index: 1;
     display: flex;
+    flex-direction: column;
+    border: 20px inset #080D19;
+    /* background: linear-gradient(to right, #080D19 50%, #f2f2f2 50%) */
 }
 
-.box {
-    padding: 5em;
+.about-header {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    margin-top: 2%;
+    /* background: linear-gradient(to bottom, rgba(242, 242, 242, 1) 30%, rgba(8, 13, 25, .3) 70%); */
+}
+
+.about-header_info {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    /* width: 70%; */
+    color: #080D19;
+    padding: 1.5em;
+    /* border: 10px inset #080D19; */
+    
+}
+
+.about-header_image img {
+    max-width: 50%;
+    display: block;
+    margin: auto;
+    border: 10px inset #f2f2f2;
+    border-radius: 20px;
+}
+
+
+.about-content {
+    display: flex;
+    flex-direction: row;
     height: 100%;
+    
+}
+
+.about-content_info {
+    border: 2px outset #080D19;
+    border-bottom: 10px outset #080D19;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 50%;
+    background-color: rgba(242, 242, 242, .5)
+}
+
+.about-content_info .about-content_text {
+    padding: .5em;
+}
+
+.about-content_slogan h4 {
+    padding: .5em;
+    border-top: 5px solid #080D19;
+    border-bottom: 5px solid #080D19;
+}
+
+
+.parallax {
+    height: 300px;
+    background: linear-gradient(to bottom left, rgba(8, 13, 25, 1) 50%, rgba(242, 242, 242, 1) 30%);
+    background-attachment: fixed;
+    background-position: center;
+} 
+
+.parallax-1 {
+    height: 300px;
+    background: linear-gradient(to top right, rgba(8, 13, 25, 1) 50%, rgba(242, 242, 242, 1) 30%);
+    background-attachment: fixed;
+    background-position: center;
+}
+
+.parallax-2 {
+    height: 300px;
+    background: linear-gradient(to bottom right, rgba(8, 13, 25, 1) 50%, rgba(242, 242, 242, 1) 30%);
+    background-attachment: fixed;
+    background-position: center;
+}
+
+/* Services */
+.services {
+    height: 100vh;
+    border: 20px inset #080D19;
+}
+
+.services-header {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.services-content_main {
+    display: flex;
+    flex-direction: row;
+}
+
+.services-content_cards {
+    margin-bottom: 2%;
+    display: flex;
+    justify-content: center;
+}
+
+.services-content_cards .card {
+    border: 2px inset rgba(8, 13, 25, 1);
+    border-bottom: 10px outset rgba(8, 13, 25, 1);
+    height: 100%;
+    background: rgba(242, 242, 242, 1);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    padding: 1em;
+}
+
+.services-content_cards .card-body {
+    width: 100%;
+}
+
+.services-content_cards .card-header {
+    background: transparent;
+    border: none;
+}
+
+.card-image img {
+    display: block;
+    margin: auto;
+    max-width: 50%;
+}
+
+.skills {
+    width: 100%;
+    height: 100%;
+}
+
+.skills-header {
+    display: flex;
+    justify-content: center;
+}
+
+.col-header_title {
+    border-bottom: 5px outset #080D19;
+    padding: .5em;
+}
+
+.skills-content_box {
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    width: 100%;
+    border: 5px solid #080D19;
+    border-bottom: 10px outset #080D19;
+}
+
+.skills-content_info {
+    height: 100px;
+    border-right: 5px inset #080D19;
+    /* padding: 1em; */
+    /* width: 50%; */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-color: #080D19;
+    color: #f2f2f2;
+    
+}
+
+.skills-content_info-title {
+    word-wrap: break-word;
+}
+
+.skills-content_info-text {
+    word-wrap: break-word;
+    padding-left: 10px;
+    padding-right: 10px;
+}
+
+.skills-content_body {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    padding: 2em;
+    /* width: 50%; */
+}
+
+.wd-box {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.wd-box .skills-body_box {
+    height: 50%;
+    display: flex;
+    flex-direction: column;
+}
+.back-box .skill-icons {
+    height: 80px;
+}
+
+.front-box .fa-brands {
+    font-size: 2.5em;
+}
+
+.design-box .skill-icons, .editor-box .skill-icons {
+    height: 80px;
+}
+
+.database-box .skill-icons {
+    height: 150px;
+    display: block;
+    margin: auto;
+}
+
+.design-box .fa-brands {
+    font-size: 4em;
+}
+
+.python-box {
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
 }
 
-.box-text {
-    font-size: 1.2em;
+.python-box .progress {
+    margin: 10px;
+    height: 50px;
+    width: 100%;
+}
+
+.technical-box .skills-content_body {
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+
+.clickup {
+    height: 120px;
+}
+
+.hubspot {
+    height: 70px;
+}
+
+.technical-box .skills-body_box {
+    width: 100%;
     padding: 1em;
 }
 
-.about-picture {
-    padding: 5em;
-    width: 100%;
+.technical-box .skills-body_box:nth-child(-n + 2) {
+    border-bottom: 5px outset #080D19;
+}
+
+.technical-box .skills-body_box-main {
+    align-items: center;
+}
+
+
+
+.skills-body_box-main i {
+    font-size: 2em;
+    padding: 1em;
+}
+
+.skills-body_box-main {
     display: flex;
     justify-content: center;
 }
 
-.about-img {
-    display: block;
-    max-width: 100%;
-    margin: auto;
-    border-radius: 25%;
-
+.languages .skill-icons {
+    height: 100px;
 }
 
-.parallax {
-    height: 300px;
-    background: url('images/parallax.jpg');
-    background-attachment: fixed;
-    background-position: center;
-    background-size: cover;
+.my-border {
+    border: 2px outset #080D19;
+    border-bottom: 5px outset #080D19;
 }
 
-.skills {
-    width: 100%;
-    height: 100%;
-    display: flex;
-    flex-direction: column;
-    background: url('images/parallax-1.png');
-    background-size: 30%;
-    background-position: bottom right;
-    background-repeat: no-repeat;
-}
+
 .box-header {
     display: flex;
     justify-content: center;
@@ -272,26 +560,12 @@ html, body {
     color: #0066cc;
 }
 
-.parallax-1 {
-    height: 300px;
-    background: url('images/programmer.jpg');
-    background-attachment: fixed;
-    background-position: bottom;
-    background-repeat: no-repeat;
-}
-
 .work {
-    height: 100vh;
-    background: url('images/parallax-1.png');
-    background-size: 30%;
-    background-position: bottom right;
-    background-repeat: no-repeat;
-}
-
-.work .box-body {
-    height: auto;
+    height: 100%;
     display: flex;
-    justify-content: space-evenly;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
 }
 
 .work .box-header {
@@ -304,6 +578,8 @@ html, body {
 
 .project-img {
     max-width: 100%;
+    border: 2px solid #080D19;
+    border-bottom: 10px outset #080D19;
 }
 
 .project-img:hover {
@@ -318,49 +594,70 @@ html, body {
     height: 100vh;
     display: flex;
     align-items: center;
-    flex-direction: column;
+    flex-direction: row;
     justify-content: center;
-    background: url('images/contact.png');
-    background-repeat: no-repeat;
-    background-position: bottom right;
-}
-
-.contact-title {
-    text-align: center;
-}
-
-.social-box {
-    margin-top: 5%;
     width: 100%;
+    /* background: url('images/contact.png');
+    background-repeat: no-repeat;
+    background-position: bottom right; */
+}
+
+.contact-form {
+    width: 50%;
+}
+
+.contact-social {
+    width: 50%;
+}
+
+
+.form-group input, .form-group textarea {
+    border: 2px solid #080D19;
+    border-bottom: 10px outset #080D19;
+    padding: 1em;
+    resize: none;
+}
+
+.form-buttons {
+    display: flex;
+    justify-content: center;
+}
+
+.form-buttons .btn {
+    width: 100%;
+    height: 50px;
+    border-bottom: 5px outset #080D19;
+}
+
+
+.social-links {
     display: flex;
     justify-content: space-evenly;
 }
 
-.social-box .fa-brands, .email i {
-    font-size: 4em;
+.social-links .fa-brands, .social-links .fa-envelope {
+    font-size: 3.5em;
+    text-shadow: 1px 1px #080D19;
 }
 
-.social-box i:hover {
-    font-size: 5em;
-}
-
-.facebook i {
-    color: #3A559F;
-}
-.linkedin i {
+.social-links .fa-linkedin {
     color: #0077B7;
 }
 
-.github i {
-    color: #000;
+.social-links .fa-square-facebook {
+    color: #3A559F;
 }
 
-.email i {
+.social-links .fa-envelope {
     color: #F14336;
 }
 
-.instagram i {
-    color: #C13584;
+.social-links .fa-github {
+    color: #000;
+}
+
+.social-links .fa-brands:hover, .social-links .fa-envelope:hover {
+    opacity: .5;
 }
 
 .footer {
@@ -383,7 +680,7 @@ html, body {
     display: flex;
     flex-direction: column;
     align-items: center;
-    padding: 2em;
+    padding: 10px;
 }
 .footer-picture {
     display: flex;
@@ -395,6 +692,13 @@ html, body {
 .footer-logo {
     width: 200px;
 }
+
+.blockquote {
+    margin: 0;
+    margin-left: 10px;
+    font-size: 1em;
+}
+
 .blockquote-footer {
     display: flex;
     justify-content: flex-end;
@@ -415,415 +719,264 @@ html, body {
     height: 100%; 
 }
 
+.footer-map {
+    width: 100%;
+    height: 100%; 
+}
+
 
 @keyframes stripes {
     0% { width: 10%;}
     100% { width: 100%;}
 }
 
-@media screen and (max-width: 349px) {
+@media screen and (max-width: 546px){
     .header {
         background-size: 100%;
-    }
-    .header-text {
         text-align: center;
-        font-size: 1em;
     }
-    .parallax-1 {
-        background-size: 100%;
-        background-position: center;
+    .about-content_info {
+        width: 90%;
     }
-    .web-box-content {
-        flex-direction: column;
+    .about-content_slogan {
+        padding-right: 10px;
+        padding-left: 10px;
+        text-align: center;
     }
-    .skills {
-        background: none;
+    .about-content_text {
+        font-size: 1em !important;
     }
-    .skill-list-item .fa-brands {
-        width: 100%;
+    .services .card-header {
+        text-align: center;
     }
-    .about {
+    .services {
+        height: 100%;
+    }
+    .services-content_cards h4 {
+        font-size: 1em !important;
+        word-wrap: break-word;
+    }
+    .wd-box {
         height: 100%;
         flex-direction: column;
     }
-    .about .box {
-        width: 100%;
-        padding: 0;
+
+    .wd-box .back-box {
+        margin-top: 2%;
+        margin-bottom: 2%;
     }
-    .about .box-text {
-        font-size: .7em;
+    .wd-box .skills-body_box-main {
+        margin-top: 0 !important;
     }
-    .box-header-title, .web-title, .list-title  {
-        font-size: 1em;
+    .wd-box .skills-body_box-main img {
+        max-width: 50%;
+        height: 60%;
     }
-    .web-box-content, .app-box-content {
-        padding: 5px;
+    .database-box  .skill-icons{
+        /* flex-direction: column; */
+        height: 120px;
     }
-    .front-end, .back-end, .app-box {
-        margin: 0;
-        margin-bottom: 5px;
+    .skills-content_info-title {
+        font-size: 1.2em !important;
+        word-wrap: break-word;
+        text-align: center;
     }
-    .back-end {
-        margin-top: 5%;
-    }
-    .app-dev {
-        width: 100%;
-    }
-    .app-box {
-        margin-top: 0;
-    }
-    .work .box-body {
-        flex-direction: column;
+    .hosting-box .skill-icons {
+        max-width: 40%;
+        height: 60px;
     }
     .work {
-        background: none; 
+        padding-top: 2%;
+        margin-bottom: 2%;
+        background: none;
     }
-    .work .project {
-        margin-bottom: 5%;
+
+    .work-box {
+        margin-top: 5%;
     }
-    .work .project-title {
-        font-size: 1em;
+    .contact {
+        height: 100%;
+        margin-top: 10%;
+        flex-direction: column;
     }
-    .contact .contact-title {
-        font-size: 1em;
+    .contact-form {
+        width: 100%;
+    }
+    .contact-social {
+        width: 100%;
+    }
+    .footer {
+        height: 100%;
     }
     .footer-content {
         flex-direction: column;
-        margin-top: 10%;
-        margin-bottom: 10%;
+    }
+    #map { 
+        width: 100%;
+        height: 200px; 
+    }
+}
+
+@media screen and (min-width: 547px) and (max-width: 767px) {
+    /* Styles for mobile devices */
+    .header {
+        background-size: 80%;
+        text-align: center;
+    }
+    .about-content_info {
+        width: 90%;
+    }
+    .about-content_slogan {
+        padding-right: 10px;
+        padding-left: 10px;
+        text-align: center;
+    }
+    .about-content_text {
+        font-size: 1em !important;
+    }
+    .services .card-header {
+        text-align: center;
+    }
+    .services {
+        height: 100%;
+    }
+    .wd-box {
+        height: 100%;
+        flex-direction: column;
+    }
+
+    .wd-box .back-box {
+        margin-top: 2%;
+        margin-bottom: 2%;
+    }
+    .database-box  .skill-icons{
+        /* flex-direction: column; */
+        height: 150px;
+    }
+    .skills-content_info-title {
+        font-size: 1.2em !important;
+        word-wrap: break-word;
+    }
+    .hosting-box .skill-icons {
+        max-width: 40%;
+        height: 60px;
+    }
+    .work {
+        padding-top: 2%;
+        margin-bottom: 2%;
+        background: none;
+    }
+
+    .work .box-header {
+        margin-top: 5%;
+    }
+
+    .work-box {
+        margin-top: 5%;
+    }
+    .contact {
+        height: 100%;
+        margin-top: 15%;
+        flex-direction: column;
+    }
+    .contact-form {
+        width: 100%;
+    }
+    .contact-social {
+        width: 100%;
     }
     .blockquote p {
-        font-size: .7em;
-    }
-    .contact {
-        height: 70vh;
-        background-size: 100%;
+        font-size: 16px !important;
     }
 }
-
-@media screen and (min-width: 350px) and (max-width: 480px) {
+@media screen and (min-width: 768px) and (max-width: 991px) {
+    /* Styles for tablets and small laptops */
     .header {
-        background-size: 100%;
-    }
-    .header-text {
+        background-size: 75%;
         text-align: center;
-        font-size: 1em;
     }
-    .parallax-1 {
-        background-size: 100%;
-        background-position: center;
+    .about-content_info {
+        width: 90%;
     }
-    .web-box-content {
-        flex-direction: column;
+    .about-content_slogan {
+        padding-right: 10px;
+        padding-left: 10px;
+        text-align: center;
     }
-    .skills {
-        background: none;
+    .services .card-header {
+        text-align: center;
     }
-    .skill-list-item .fa-brands {
-        width: 100%;
+    .services {
+        height: 100%;
     }
-    .about {
+    .wd-box {
         height: 100%;
         flex-direction: column;
     }
-    .about .box {
-        width: 100%;
+
+    .wd-box .back-box {
+        margin-top: 2%;
+        margin-bottom: 2%;
+    }
+    .skills-content_info-title {
+        font-size: 1.2em !important;
+        word-wrap: break-word;
+    }
+    .database-box, .editor-box {
+        flex-direction: column;
+    }
+    .database-box .skill-icons {
+        max-width: 60%;
+        height: 20%;
+    }
+    .editor-box .skill-icons {
+        max-width: 100%;
+        display: block;
+        margin: auto;
+    }
+    .blockquote p {
+        font-size: 16px !important;
+    }
+
+    .work .project-title {
+        font-size: 1.5em;
+    }
+
+
+}
+@media screen and (min-width: 992px) and (max-width: 1199px) {
+    /* Styles for standard laptops and desktops */
+    .services .card-header {
         padding: 0;
     }
-    .about .box-text {
-        font-size: 1em;
-    }
-    .box-header-title, .web-title, .list-title  {
-        font-size: 1em;
-    }
-    .web-box-content, .app-box-content {
-        padding: 5px;
-    }
-    .front-end, .back-end, .app-box {
-        margin: 0;
-        margin-bottom: 5px;
-    }
-    .back-end {
-        margin-top: 5%;
-    }
-    .app-dev {
-        width: 100%;
-    }
-    .app-box {
-        margin-top: 0;
-    }
-    .work {
-        background: none;
-    }
-    .work .box-body {
-        flex-direction: column;
-    }
-    .work .project {
-        margin-bottom: 5%;
-    }
-    .work .project-title {
-        font-size: 1em;
-    }
-    .contact {
-        background-size: 100%;
-        background-position: bottom;
-    }
-    .contact .contact-title {
-        font-size: 1em;
-    }
-    .footer-content {
-        flex-direction: column;
-        margin-top: 10%;
-        margin-bottom: 10%;
-    }
-}
-
-/* Small devices (landscape phones, 576px and up) */
-@media screen and (min-width: 481px) and (max-width: 767px){
-    .header {
-        background-size: 70%;
-    }
-    .header-text {
-        text-align: center;
-        font-size: 1em;
-    }
-    .web-box-content {
-        flex-direction: column;
-    }
-    .skills {
-        background: none;
-    }
-    .skill-list-item .fa-brands {
-        width: 100%;
-    }
-    .about {
+    .wd-box {
         height: 100%;
         flex-direction: column;
     }
-    .about .box {
-        width: 100%;
-        padding: 0;
+
+    .wd-box .back-box {
+        margin-top: 2%;
+        margin-bottom: 2%;
     }
-    .about .box-text {
-        font-size: 1em;
+    .skills-content_info-title {
+        font-size: 1.2em !important;
+        word-wrap: break-word;
     }
-    .box-header-title, .web-title, .list-title  {
-        font-size: 1em;
-    }
-    .web-box-content, .app-box-content {
-        padding: 5px;
-    }
-    .front-end, .back-end, .app-box {
-        margin: 0;
-        margin-bottom: 5px;
-    }
-    .back-end {
-        margin-top: 5%;
-    }
-    .app-dev {
-        width: 100%;
-    }
-    .app-box {
-        margin-top: 0;
-    }
-    .parallax-1 {
-        background-size: 100%;
-        background-position: center;
-    }
-    .work {
-        background: none;
-    }
-    .work .box-body {
-        flex-direction: column;
-        align-items: center;
-    }
-    .work .project {
-        margin-bottom: 5%;
-    }
-    .work .project-title {
-        font-size: 1em;
-    }
-    .contact {
-        background-size: 100%;
-        background-position: bottom;
-    }
-    .contact .contact-title {
-        font-size: 1em;
-    }
-    .footer-content {
-        flex-direction: column;
-        margin-top: 10%;
-        margin-bottom: 10%;
-    }
-    #map {
-        height: 20vh;
-    }
+
 }
 
-@media screen and (min-width: 481px) and (max-width: 767px) and (orientation: landscape) { 
-}
-/* Medium devices (tablets, 768px and up) */
-@media screen and (min-width: 768px) and (max-width: 1023px){ 
-    .header {
-        background-size: 70%;
-    }
-    .parallax-1 {
-        background-size: 100%;
-        background-position: center;
-    }
-    .header-text {
-        text-align: center;
-        font-size: 1em;
-    }
-    .web-box-content {
-        flex-direction: column;
-    }
-    .skills {
-        background: none;
-    }
-    .skill-list-item .fa-brands {
-        width: 100%;
-    }
-    .about {
-        height: 100%;
-        flex-direction: column;
-    }
-    .about .box {
-        width: 100%;
-        padding: 0;
-    }
-    .about .box-text {
-        font-size: 1em;
-    }
-    .box-header-title, .web-title, .list-title  {
-        font-size: 1em;
-    }
-    .web-box-content, .app-box-content {
-        padding: 5px;
-    }
-    .front-end, .back-end, .app-box {
-        margin: 0;
-        margin-bottom: 5px;
-    }
-    .back-end {
-        margin-top: 5%;
-    }
-    .app-dev {
-        width: 100%;
-    }
-    .app-box {
-        margin-top: 0;
-    }
-    .work {
-        background: none;
-    }
-    .work .box-body {
-        flex-direction: column;
-        align-items: center;
-    }
-    .work .project {
-        margin-bottom: 5%;
-    }
-    .work .project-title {
-        font-size: 1em;
-    }
-    .contact {
-        background-size: 100%;
-        background-position: bottom;
-    }
-    .contact .contact-title {
-        font-size: 1em;
-    }
-    .footer-content {
-        flex-direction: column;
-        margin-top: 5%;
-        margin-bottom: 5%;
-    }
-    #map {
-        height: 20vh;
-    }
-}
+@media screen and (min-width: 1200px) {
+    /* Styles for large desktops */
 
-@media screen and (min-width: 769px) and (max-width: 1023px) and (orientation: landscape) {
-    .header {
-        background-size: 50%;
-    }
 }
+  
+  
 
-/* Large devices (desktops, 992px and up) */
-@media screen and (min-width: 1024px) and (max-width: 1440px) { 
-    .header {
-        background-size: 60%;
-    }
-    .header-text {
-        text-align: center;
-        font-size: 1em;
-    }
-    .web-box-content {
-        flex-direction: column;
-    }
-    .skills {
-        background: none;
-    }
-    .skill-list-item .fa-brands {
-        width: 100%;
-    }
-    .about {
-        height: 100%;
-        flex-direction: column;
-    }
-    .about .box {
-        width: 100%;
-        padding: 5px;
-    }
-    .about .box-text {
-        font-size: 1em;
-    }
-    .about-img {
-        width: 50%;
-    }
-    .box-header-title, .web-title, .list-title  {
-        font-size: 1em;
-    }
-    .web-box-content, .app-box-content {
-        padding: 5px;
-    }
-    .front-end, .back-end, .app-box {
-        margin: 0;
-        margin-bottom: 5px;
-    }
-    .back-end {
-        margin-top: 5%;
-    }
-    .app-dev {
-        width: 100%;
-    }
-    .app-box {
-        margin-top: 0;
-    }
-    .work {
-        background: none;
-    }
-    .work .box-body {
-        flex-direction: column;
-        align-items: center;
-    }
-    .work .project {
-        margin-bottom: 5%;
-    }
-    .work .project-title {
-        font-size: 1em;
-    }
-    .contact .contact-title {
-        font-size: 1em;
-    }
-    .footer-content {
-        flex-direction: column;
-    }
-    #map {
-        height: 200px;
-    }
-}
+
+
+@media screen and (orientation: landscape) {
+    /* Styles for landscape orientation */
+  }
 
 
 /*
