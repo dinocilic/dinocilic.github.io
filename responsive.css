@@ -1,0 +1,321 @@
+@media screen and (min-width: 240px) and (max-width: 349px) {
+    .hero {
+        flex-direction: column;
+        /* height: 100%; */
+        padding-bottom: 5em;
+    }
+    .hero_image img {
+        width: 50%;
+    }
+    .hero_title {
+        font-size: 3em;
+    }
+    .hero_subtitle {
+        font-size: 1.5em;
+    }
+    .about_section {
+        width: 90%;
+    }
+    .about_section-text {
+        font-size: 14px;
+    }
+    #about .row {
+        flex-direction: column-reverse;
+    }
+    .services_header {
+        text-align: center;
+        width: 90%;
+    }
+    .services_div {
+        flex-direction: column;
+        height: 100%;
+    }
+    .services_div img {
+        max-width: 50%;
+    }
+    .services_row {
+        padding: 0;
+        margin: 0;
+    }
+    .services_header-subtitle {
+        font-size: 1em;
+    }
+    .services_card-text {
+        font-size: 1em;
+    }
+    .skills_header {
+        width: 90%;
+    }
+    .skills_header-subtitle {
+        font-size: 1em;
+    }
+    .stack_card {
+        margin: 0;
+    }
+    .projects_header-title {
+        width: 90%;
+        text-align: center;
+    }
+    .projects_card {
+        flex-direction: column;
+    }
+    .projects_card img {
+        max-width: 100%;
+    }
+    .cta_section {
+        max-width: 80%;
+    }
+    .cta_social-icons .bi {
+        font-size: 2em;
+    }
+    .footer_top {
+        flex-direction: column;
+    }
+    .footer_top .flex-column {
+        flex-direction: row !important;
+        justify-content: center;
+    }
+    .footer_navigation-main {
+        padding-top: 1em;
+        padding-bottom: 1em;
+    }
+    .footer_navigation-services {
+        padding-bottom: 1em;
+    }
+    .footer_map {
+        width: 50%;
+    }
+    .cta_title {
+        font-size: 1.5em;
+    }
+    .cta_subtitle {
+        font-size: 1em;
+    }
+    .footer_bottom-social {
+        width: 50%;
+    }
+
+}
+
+
+/* Smartphones */
+@media only screen and (min-width: 350px) and (max-width: 767px) {
+    /* Your CSS for smartphones here */
+    .hero {
+        flex-direction: column;
+        /* height: 100%; */
+        padding-bottom: 5em;
+    }
+    .hero_image img {
+        width: 50%;
+    }
+    .hero_title {
+        font-size: 3em;
+    }
+    .hero_subtitle {
+        font-size: 1.5em;
+    }
+    .about_section {
+        width: 90%;
+    }
+    .about_section-text {
+        font-size: 14px;
+    }
+    #about .row {
+        flex-direction: column-reverse;
+    }
+    .services_header {
+        text-align: center;
+        width: 90%;
+    }
+    .services_div {
+        flex-direction: column;
+        height: 100%;
+    }
+    .services_div img {
+        max-width: 50%;
+    }
+    .services_row {
+        padding: 0;
+        margin: 0;
+    }
+    .services_header-subtitle {
+        font-size: 1em;
+    }
+    .services_card-text {
+        font-size: 1em;
+    }
+    .skills_header {
+        width: 90%;
+    }
+    .skills_header-subtitle {
+        font-size: 1em;
+    }
+    .stack_card {
+        margin: 0;
+    }
+    .projects_header-title {
+        width: 90%;
+        text-align: center;    
+    }
+    .projects_card {
+        flex-direction: column;
+    }
+    .projects_card img {
+        max-width: 100%;
+    }
+    .cta_section {
+        max-width: 80%;
+    }
+    .cta_social-icons .bi {
+        font-size: 2em;
+    }
+    .footer_top {
+        flex-direction: column;
+    }
+    .footer_top .flex-column {
+        flex-direction: row !important;
+        justify-content: center;
+    }
+    .footer_navigation-main {
+        padding-top: 1em;
+        padding-bottom: 1em;
+    }
+    .footer_navigation-services {
+        padding-bottom: 1em;
+    }
+    .footer_map {
+        width: 50%;
+    }
+    .cta_title {
+        font-size: 1.5em;
+    }
+    .cta_subtitle {
+        font-size: 1em;
+    }
+    .footer_bottom-social {
+        width: 50%;
+    }
+}
+
+/* Tablets */
+@media only screen and (min-width: 768px) and (max-width: 991px) {
+    /* Your CSS for tablets here */
+    .hero {
+        flex-direction: column;
+        /* height: 100%; */
+        padding-bottom: 5em;
+    }
+    .hero_image img {
+        width: 50%;
+    }
+    .hero_title {
+        font-size: 3em;
+    }
+    .hero_subtitle {
+        font-size: 1.5em;
+    }
+    .about_section-text {
+        font-size: 14px;
+    }
+    .about_section {
+        width: 90%;
+    }
+    .services_header {
+        text-align: center;
+        width: 90%;
+    }
+    .projects_header-title {
+        width: 70%;
+    }
+    .projects_card {
+        flex-direction: column;
+    }
+    .projects_card img {
+        max-width: 100%;
+    }
+    .cta_section {
+        max-width: 80%;
+    }
+    .footer_top {
+        flex-direction: column;
+    }
+    .footer_top .flex-column {
+        flex-direction: row !important;
+        justify-content: center;
+    }
+    .footer_navigation-main {
+        padding-top: 1em;
+        padding-bottom: 1em;
+    }
+    .footer_navigation-services {
+        padding-bottom: 1em;
+    }
+    .footer_map {
+        width: 50%;
+    }
+}
+
+/* Small desktops */
+@media only screen and (min-width: 992px) and (max-width: 1199px) {
+    /* Your CSS for small desktops here */
+    .hero {
+        flex-direction: column;
+        /* height: 100%; */
+        padding-bottom: 5em;
+    }
+    .hero_image img {
+        width: 40%;
+    }
+    .about_section {
+        width: 90%;
+    }
+    .services_div {
+        flex-direction: column;
+        height: 100%;
+    }
+    .services_div img {
+        max-width: 50%;
+    }
+    .projects_header-title {
+        width: 70%;
+    }
+    .footer_top {
+        flex-direction: column;
+    }
+    .footer_top .flex-column {
+        flex-direction: row !important;
+        justify-content: center;
+    }
+    .footer_navigation-main {
+        padding-top: 1em;
+        padding-bottom: 1em;
+    }
+    .footer_navigation-services {
+        padding-bottom: 1em;
+    }
+
+}
+  
+/* Medium-sized desktops */
+@media only screen and (min-width: 1200px) and (max-width: 1439px) {
+    /* Your CSS for medium-sized desktops here */
+    .about_section {
+        width: 90%;
+    }
+    .services_card-text {
+        font-size: 1em;
+    }
+}
+
+/* Large desktops */
+@media only screen and (min-width: 1440px) {
+    /* Your CSS for large desktops here */
+}
+
+/* @media screen and (max-width: 300px) {
+}
+
+@media screen and (max-width: 992px) {
+
+} */
