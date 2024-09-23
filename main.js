@@ -1,5 +1,5 @@
 AOS.init()
-
+/* 
 
 var map = L.map('map').setView([43.661303, 17.7593497,18], 15);
 
@@ -12,7 +12,7 @@ map.invalidateSize();
 
 
 
-$(document).ready(function() {
+ */$(document).ready(function() {
     $(window).scroll(function() {    
         var scroll = $(window).scrollTop();
         if (scroll > 500) {
